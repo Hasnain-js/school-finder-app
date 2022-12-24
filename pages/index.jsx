@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Navbar } from '../components/Navbar'
 import styles from '../styles/Home.module.css'
+import styles from '../styles/navbar.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const name = "Hasnain banmo saeed"
 
 export default function Home() {
   return (
@@ -13,9 +14,12 @@ export default function Home() {
         <meta name="description" content="You can find your dream school" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+       
       </Head>
       <main className={styles.main}>
        <h1>Welcome to school finder Application</h1>
+       <p> { name }</p>
+       <Navbar name={name} email="ihasanin4@gmail.com"></Navbar>
       </main>
     </>
   )
