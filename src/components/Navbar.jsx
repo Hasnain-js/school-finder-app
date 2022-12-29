@@ -1,113 +1,78 @@
 import React from "react";
-
 export const Navbar = () => {
 	return (
 		<>
-		
-			<header className='fixed top-0 left-0 right-0'>
-				<div className='px-4 mx-auto sm:px-6 lg:px-8'>
-					<div className='flex items-center justify-between h-16 lg:h-20'>
-						<div className='flex-shrink-0'>
-							<a href='#' title='' className='flex'>
-								<img
-									className='w-auto h-8'
-									src='https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg'
-									alt=''
-								/>
-							</a>
-						</div>
-
+			<nav className='z-50 flex items-center fixed top-0 left-0 right-0 justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700'>
+				<div className='flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0'>
+					<div className='flex items-center flex-shrink-0 text-gray-800 mr-16'>
+						<span className='font-semibold text-xl tracking-tight'>
+							My Navbar
+						</span>
+					</div>
+					<div className='block lg:hidden '>
 						<button
-							type='button'
-							className='inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100'>
-							{/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
+							id='nav'
+							className='flex items-center px-3 py-2 border-2 rounded text-blue-700 border-blue-700 hover:text-blue-700 hover:border-blue-700'>
 							<svg
-								className='block w-6 h-6'
-								xmlns='http://www.w3.org/2000/svg'
-								fill='none'
-								viewBox='0 0 24 24'
-								stroke='currentColor'>
-								<path
-									stroke-linecap='round'
-									stroke-linejoin='round'
-									stroke-width='2'
-									d='M4 6h16M4 12h16M4 18h16'
-								/>
-							</svg>
-
-							{/* <!-- Menu open: "block", Menu closed: "hidden" --> */}
-							<svg
-								className='hidden w-6 h-6'
-								xmlns='http://www.w3.org/2000/svg'
-								fill='none'
-								viewBox='0 0 24 24'
-								stroke='currentColor'>
-								<path
-									stroke-linecap='round'
-									stroke-linejoin='round'
-									stroke-width='2'
-									d='M6 18L18 6M6 6l12 12'></path>
+								className='fill-current h-3 w-3'
+								viewBox='0 0 20 20'
+								xmlns='http://www.w3.org/2000/svg'>
+								<title>Menu</title>
+								<path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
 							</svg>
 						</button>
-
-						<div className='hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10'>
-							<a
-								href='#'
-								title=''
-								className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								{" "}
-								Features{" "}
-							</a>
-
-							<a
-								href='#'
-								title=''
-								className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								{" "}
-								Solutions{" "}
-							</a>
-
-							<a
-								href='#'
-								title=''
-								className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								{" "}
-								Resources{" "}
-							</a>
-
-							<a
-								href='#'
-								title=''
-								className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								{" "}
-								Pricing{" "}
-							</a>
-
-							<div className='w-px h-5 bg-black/20'></div>
-
-							<a
-								href='#'
-								title=''
-								className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								{" "}
-								Log in{" "}
-							</a>
-
-							<a
-								href='#'
-								title=''
-								className='inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white'
-								role='button'>
-								{" "}
-								Try for free{" "}
-							</a>
-						</div>
 					</div>
 				</div>
-			</header>
 
+				<div className='menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8'>
+					<div className='text-md font-bold text-blue-700 lg:flex-grow'>
+						<a
+							href='/'
+							className='block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2'>
+							Home
+						</a>
+						<a
+							href='/about'
+							className=' block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2'>
+							About us
+						</a>
+						<a
+							href='/school'
+							className=' block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2'>
+							Schools
+						</a>
+						<a
+							href='/contact'
+							className='block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2'>
+							Contact Us
+						</a>
+					</div>
+					<div className='relative mx-auto text-gray-600 lg:block hidden'>
+						<input
+							className='border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none'
+							type='search'
+							name='search'
+							placeholder='Search'
+						/>
+						<button
+							type='submit'
+							className='absolute right-0 top-0 mt-3 mr-2'></button>
+					</div>
+					<div className='flex '>
+						<a
+							href='/sign-in'
+							className='block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0'>
+							Sign in
+						</a>
 
-
+						<a
+							href='/contact'
+							className=' block text-md px-4  ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0'>
+							Register now
+						</a>
+					</div>
+				</div>
+			</nav>
 		</>
 	);
 };
