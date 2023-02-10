@@ -1,14 +1,15 @@
-import React from 'react';
-import Navbar from './Navbar/Navbar';
+import React from "react";
+import Home from "../pages/home/Home";
+import Navbar from "./Navbar/Navbar";
 
 const App = () => {
-  return (
-    <>
-      <Navbar />
-      <h1>App is running!</h1>
-      <div className="check-img"></div>
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+
+			<Home/>
+		</>
+	);
 };
 
-export default App
+export default App;
