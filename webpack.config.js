@@ -12,6 +12,9 @@ module.exports = {
     resolve: {
         alias: {
             components: path.resolve(__dirname, 'src/components'),
+            pages: path.resolve(__dirname, 'src/pages'),
+            layouts: path.resolve(__dirname, 'src/layouts'),
+            assets: path.resolve(__dirname, 'src/assets'),
         },
         extensions: ['.js', '.jsx'],
     },
@@ -36,6 +39,13 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
+            },
         ],
     },
     plugins: [
@@ -46,7 +56,8 @@ module.exports = {
     ],
     devServer: {
         //contentBase: path.join(__dirname, "dist"),
-        port: 8000,
+        port: 3000,
         liveReload: true,
+        historyApiFallback: true,
     },
 };

@@ -1,6 +1,10 @@
 import React from "react";
+import Navbar from "components/Navbar/Navbar";
 const Home = () => {
 	return (
+		<>
+
+		<Navbar />
 		<div className='hero'>
 			<div className='background-left'></div>
 			<div className='background-right'></div>
@@ -21,6 +25,7 @@ const Home = () => {
 				</div>
 			</div>
 		</div>
+		</>
 	);
 };
 
