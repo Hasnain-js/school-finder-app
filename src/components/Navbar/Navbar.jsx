@@ -9,7 +9,7 @@ const Navbar = () => {
           <button className="nav__toggle"  onClick={() => setIsOpen(!isOpen) } type="button">
             menu
           </button>
-          <ul className={isOpen ? "nav__wrapper active" : "nav__wrapper"} >
+          <ul className={isOpen ? "nav__wrapper--active" : "nav__wrapper"} >
             <li className="nav__item"><a href="#">Home</a></li>
             <li className="nav__item"><a href="#">About</a></li>
             <li className="nav__item"><a href="#">Services</a></li>

@@ -52,7 +52,7 @@
         transition: transform .3s ease-out,opacity .3s ease-out
     }
 
-    .nav__wrapper.active {
+    .nav__wrapper--active {
         visibility: visible;
         opacity: 1;
         transform: translateY(0)
