@@ -13,11 +13,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        'copper-red':'#CE4A1D',
-        'copper-red-lighter':'#de5021',
-      }
+      colors: {
+        "copper-red": "#CE4A1D",
+        "copper-red-lighter": "#de5021",
+      },
     },
   },
   plugins: [],
-}
+};

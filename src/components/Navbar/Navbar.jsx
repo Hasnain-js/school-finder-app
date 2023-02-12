@@ -1,84 +1,56 @@
 import React from "react";
 import logo from "../../assets/images/logo.svg";
 const Navbar = () => {
-	return (
-		<>
-			{/* navbar top */}
-			<nav>
-				<div className='max-md:grid-cols-2   py-1.5 px-14 grid grid-cols-8 grid-rows-1 bg-black	h-7'>
-					<div className='flex text-justify text-white grid-cols-6'>
-						<ion-icon name='mail-outline'></ion-icon>
-						<a className='pl-2 text-xs' href='ramhas12@gmail.com'>
-							ramhas12@gmail.com
-						</a>
-					</div>
-
-					<div className='flex text-justify text-white grid-cols-6'>
-						<ion-icon name='call-outline'></ion-icon>
-						<a className='pl-2 text-xs' href='01020929929'>
-							012345678789
-						</a>
-					</div>
-				</div>
-			</nav>
-
-			<nav className='max-md:pl-7  pl-14 p-5 bg-white shadow md:flex md:items-center md:justify-between'>
-				<div className='flex justify-between items-center '>
-					<span className='text-2xl  cursor-pointer'>
-						<img className='w-36 inline' src={logo} />
-					</span>
-
-					<span className='text-3xl cursor-pointer mx-2 md:hidden block'>
-						<ion-icon name='menu' onclick='Menu(this)'></ion-icon>
-					</span>
-				</div>
-
-				<ul className=' max-sm:items-center max-sm:bg-copper-red md:flex md:items-center z-[-1] md:z-auto md:static absolute lg:bg-white  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500'>
-					<li className='mx-4 my-6 md:my-0'>
-						<a
-							href='#'
-							className='max-sm:text-white text text-xl hover:text-copper-red duration-500'>
-							Home
-						</a>
-					</li>
-					<li className='mx-4 my-6 md:my-0'>
-						<a
-							href='#'
-							className='max-sm:text-white text-xl hover:text-copper-red duration-500'>
-							About Us
-						</a>
-					</li>
-					<li className='mx-4 my-6 md:my-0'>
-						<a
-							href='#'
-							className='max-sm:text-white text-xl hover:text-copper-red duration-500'>
-							Our Services
-						</a>
-					</li>
-					<li className='mx-4 my-6 md:my-0'>
-						<a
-							href='#'
-							className='max-sm:text-white text-xl hover:text-copper-red duration-500'>
-							Contact
-						</a>
-					</li>
-					<li className='mx-4 my-6 md:my-0'>
-						<a
-							href='#'
-							className='max-sm:text-white text-xl hover:text-copper-red duration-500'>
-							Schools
-						</a>
-					</li>
-
-					<button className='flex items-center max-sm:text-copper-red max-sm:bg-white bg-copper-red text-white duration-500 px-6 py-2 mx-4 hover:bg-copper-red-lighter rounded '>
-					<ion-icon name="log-in-outline"></ion-icon>
-						 Sign in
-					</button>
-					<h2 className=''></h2>
-				</ul>
-			</nav>
-		</>
-	);
+  return (
+    <>
+      {/* top Banner */}
+      <nav className="text-white bg-black">
+        <div className="container mx-auto py-1 px-5 flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a className="text-xs" href="mailto:ramhas12@gmail.com">
+              ramhas12@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <ion-icon name="call-outline"></ion-icon>
+            <a className="text-xs" href="01020929929">
+              012345678789
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav className="bg-white shadow z-30 relative">
+        <div className="container mx-auto p-5 lg:flex lg:items-center lg:justify-between">
+          <div className="flex justify-between items-center">
+            <a className="cursor-pointer">
+              <img className="w-36 h-auto inline cursor-pointer" src={logo} />
+            </a>
+            <span className="text-3xl cursor-pointer mx-2 lg:hidden block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+          <div className="lg:relative absolute left-0 lg:mt-0 mt-5 w-full lg:w-auto bg-copper-red lg:bg-transparent">
+            <ul className="container mx-auto p-5 lg:text-black text-white hover:text-copper-red text-xl duration-500 flex lg:items-center items-start lg:flex-row flex-col gap-5">
+              {["Home", "About Us", "Our Services", "Contact", "Schools"].map(
+                (item, index) => {
+                  return (
+                    <li key={index}>
+                      <a href="#">{item}</a>
+                    </li>
+                  );
+                }
+              )}
+              <button className="flex items-center gap-2 whitespace-nowrap text-copper-red lg:text-white bg-white lg:bg-copper-red duration-500 px-6 py-2 hover:bg-copper-red-lighter rounded ">
+                <ion-icon name="log-in-outline"></ion-icon>
+                Sign in
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Navbar;
