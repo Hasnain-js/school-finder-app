@@ -12,7 +12,12 @@ module.exports = {
     "./public/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'copper-red':'#CE4A1D',
+        'copper-red-lighter':'#de5021',
+      }
+    },
   },
   plugins: [],
 }

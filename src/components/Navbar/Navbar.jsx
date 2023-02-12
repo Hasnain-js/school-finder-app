@@ -1,62 +1,47 @@
-import React from "react";
-
-export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+import React from "react"
+import logo from "../../assets/images/logo.svg"
+const Navbar = () => {
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#pablo"
-            >
-              pink Tailwind Starter Kit
-            </a>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Share</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Tweet</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<nav className="max-md:pl-7  pl-14 p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div className="flex justify-between items-center ">
+      <span className="text-2xl font-[Poppins] cursor-pointer">
+        <img className="w-32 inline"
+          src={logo}/>
+        
+      </span>
+
+      <span className="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul className=" max-sm:items-center max-sm:bg-copper-red md:flex md:items-center z-[-1] md:z-auto md:static absolute lg:bg-white  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li className="mx-4 my-6 md:my-0">
+        <a href="#" className="max-sm:text-white text text-xl hover:text-copper-red duration-500">Home</a>
+      </li>
+      <li className="mx-4 my-6 md:my-0">
+        <a href="#" className="max-sm:text-white text-xl hover:text-copper-red duration-500">About Us</a>
+      </li>
+      <li className="mx-4 my-6 md:my-0"> 
+        <a href="#" className="max-sm:text-white text-xl hover:text-copper-red duration-500">Our Services</a>
+      </li>
+      <li className="mx-4 my-6 md:my-0">
+        <a href="#" className="max-sm:text-white text-xl hover:text-copper-red duration-500">Contact</a>
+      </li>
+      <li className="mx-4 my-6 md:my-0">
+        <a href="#" className="max-sm:text-white text-xl hover:text-copper-red duration-500">Schools</a>
+      </li>
+
+      <button className="max-sm:text-copper-red max-sm:bg-white bg-copper-red text-white duration-500 px-6 py-2 mx-4 hover:bg-copper-red-lighter rounded ">
+        Sign in
+      </button>
+<h2 className=""></h2>
+    </ul>
+  </nav>
+      
     </>
   );
-}
+};
+
+export default Navbar;
