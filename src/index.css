@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/DMSans-Regular.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
