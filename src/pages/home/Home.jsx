@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import AboutusImage from "../../assets/images/schoolchlid.jpg";
 import BannerImage from "../../assets/images/banner.png";
 import SearchImages from "../../assets/images/big-search.png";
@@ -8,8 +9,9 @@ import icomImages from "../../assets/images/icon-search.png";
 import TrackImage from "../../assets/images/banner-2.jpg";
 import TrackImage2 from "../../assets/images/girl.jpg";
 import TrackImage3 from "../../assets/images/banner-3.jpg";
-import Carousel from "../../components/Carousel"
-
+import Carousel from "../../components/Carousel";
+import TopFooter from "../../assets/images/footertop.png";
+import TopFooter2 from "../../assets/images/footertop2.png";
 
 const Home = () => {
 	return (
@@ -248,7 +250,7 @@ const Home = () => {
 							<div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
 								<img
 									className='lg:h-48 md:h-36 w-full object-cover object-center'
-									src={TrackImage}
+									src={TrackImage2}
 									alt='blog'
 								/>
 								<div className='p-6 '>
@@ -282,7 +284,7 @@ const Home = () => {
 							<div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
 								<img
 									className='lg:h-48 md:h-36 w-full object-cover object-center'
-									src={TrackImage}
+									src={TrackImage3}
 									alt='blog'
 								/>
 								<div className='p-6 '>
@@ -315,18 +317,57 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+
+			{/* Card slider */}
 			<div>
-      <div className='p-10'>
-        <div className='flex justify-center items-center gap-2 '>
-          <Carousel />
-        </div>
-      </div>
-    </div>
+				<div className='p-10'>
+					<div className='flex justify-center items-center gap-2 '>
+						<Carousel />
+					</div>
+				</div>
+			</div>
 
-{/* extra */}
+			{/* Above footer section */}
+			<div className=' flex items-center pl-40 pr-40 pb-24'>
+				<div className='relative bg-blueStone w-[100%] pl-40 pr-40 py-20 flex items-center flex-col'>
+					<h2 className='text-white text-center text-3xl font-semibold leading-tight text-blaxck sm:text-4xl lg:text-5xl lg:leading-tight'>
+						Our Tracks
+					</h2>
+					<p className='text-center  text-base text-white sm:text-xl'>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+					</p>
 
+					<form className='mt-5 w-[50%]'>
+						<label
+							for='default-search'
+							className=' mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'>
+							Search
+						</label>
+						<div className='relative'>
+							<input
+								type='search'
+								id='default-search'
+								className=' shadow-lg  block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-[40px] bg-gray-50 dark:border-slate-200 dark:placeholder-gray-400 '
+								placeholder='Email Address..'
+								required
+							/>
+							<button
+								type='submit'
+								className='text-white absolute right-1 bottom-1 bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-[40px] text-sm px-9 py-3'>
+								Send
+							</button>
+						</div>
+					</form>
+					<div className='absolute left-[6rem] top-[152px]  '>
+						<img className='w-36' src={TopFooter} alt='' />
+					</div>
 
-
+					<div className='absolute right-[10rem] top-[152px]  '>
+						<img className='w-36' src={TopFooter2} alt='' />
+					</div>
+				</div>
+			</div>
+			<Footer />
 		</>
 	);
 };
