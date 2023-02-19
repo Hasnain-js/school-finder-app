@@ -5,13 +5,17 @@ import BannerImage from "../../assets/images/banner.png";
 import SearchImages from "../../assets/images/big-search.png";
 import SmallImages from "../../assets/images/house.png";
 import icomImages from "../../assets/images/icon-search.png";
+import TrackImage from "../../assets/images/banner-2.jpg";
+import TrackImage2 from "../../assets/images/girl.jpg";
+import TrackImage3 from "../../assets/images/banner-3.jpg";
+import Carousel from "../../components/Carousel"
+
 
 const Home = () => {
 	return (
 		<>
 			<Navbar />
 			{/* Heroic Section */}
-
 			<div className='relative bg-gradient-to-b bg-[#FFF7F4]'>
 				<img
 					className=' absolute opacity-20 right-30 left-80  bottom-5 w-14 z-1'
@@ -56,7 +60,7 @@ const Home = () => {
 										className=' mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'>
 										Search
 									</label>
-									<div className='relative'>
+									<div className='relative w-4/5'>
 										<div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
 											<svg
 												aria-hidden='true'
@@ -81,7 +85,7 @@ const Home = () => {
 										/>
 										<button
 											type='submit'
-											className='text-white absolute right-3 bottom-1 bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-[40px] text-sm px-9 py-3'>
+											className='text-white absolute right-1 bottom-1 bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-[40px] text-sm px-9 py-3'>
 											Search
 										</button>
 									</div>
@@ -90,7 +94,7 @@ const Home = () => {
 
 							<div>
 								<img
-									className='absolute top-0 left-auto opacity-20 top-20 right-40 z-0 h-60'
+									className='absolute left-auto opacity-20 top-20 right-40 z-0 h-60'
 									src={SearchImages}
 									alt=''
 								/>
@@ -192,56 +196,137 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-
 			{/* lower banner section end */}
 
-			{/* about us section */}
-			<section class='py-10 bg-white sm:py-16 lg:py-24'>
-				<div class='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
-					<div class='grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12'>
-						<div class='relative lg:mb-12'>
-							<img
-								class='absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4'
-								src='https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg'
-								alt=''
-							/>
-							<div class='pl-12 pr-6'>
-								<img class='relative ' src={AboutusImage} alt='' />
-							</div>
-							<div class='absolute left-0 pr-12 bottom-8 xl:bottom-20'>
-								<div class='max-w-xs bg-rustyRed rounded-lg sm:max-w-md xl:max-w-md'>
-									<div class='px-3 py-4 sm:px-5 sm:py-8'>
-										<div class='flex items-start'>
-											<blockquote class='ml-5'>
-												<p class='text-sm font-medium text-white sm:text-lg'>
-													“You made it so simple. My new site is so much faster
-													and easier to work with than my old site.”
-												</p>
-											</blockquote>
-										</div>
+			{/* Our tracks */}
+			<section className='body-font'>
+				<div className='container px-36 py-24 mx-auto'>
+					<h2 className='text-center text-3xl font-semibold leading-tight text-blaxck sm:text-4xl lg:text-5xl lg:leading-tight'>
+						Our Tracks
+					</h2>
+
+					<p className='text-center mt-8 text-base text-black sm:text-xl'>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+					</p>
+					<br />
+					<div className='flex flex-wrap -m-4'>
+						<div className='p-4 md:w-1/3'>
+							<div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
+								<img
+									className='lg:h-48 md:h-36 w-full object-cover object-center'
+									src={TrackImage}
+									alt='blog'
+								/>
+								<div className='p-6 '>
+									<h2 className='flex items-center tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
+										CATEGORY
+										<span className=' text-rustyRed inline-flex pl-52'>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+										</span>
+									</h2>
+									<h1 className='title-font text-lg font-medium text-gray-900 mb-3'>
+										The Catalyzer
+									</h1>
+									<p className='leading-relaxed mb-3'>
+										Photo booth fam kinfolk cold-pressed sriracha leggings
+										jianbing microdosing tousled waistcoat.
+									</p>
+
+									<div className='flex items-center flex-wrap '>
+										<button className='flex items-center bg-rustyRed px-12 py-2 rounded-full text-white'>
+											Profile
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div className='p-4 md:w-1/3'>
+							<div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
+								<img
+									className='lg:h-48 md:h-36 w-full object-cover object-center'
+									src={TrackImage}
+									alt='blog'
+								/>
+								<div className='p-6 '>
+									<h2 className='flex items-center tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
+										CATEGORY
+										<span className=' text-rustyRed inline-flex pl-52'>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+										</span>
+									</h2>
+									<h1 className='title-font text-lg font-medium text-gray-900 mb-3'>
+										The Catalyzer
+									</h1>
+									<p className='leading-relaxed mb-3'>
+										Photo booth fam kinfolk cold-pressed sriracha leggings
+										jianbing microdosing tousled waistcoat.
+									</p>
 
-						<div class='2xl:pl-16'>
-							<h2 class='text-3xl font-bold leading-tight text-blaxck sm:text-4xl lg:text-5xl lg:leading-tight'>
-								We make things easy for projects.
-							</h2>
-							<p class='text-xl leading-relaxed text-gray-900 mt-9'>
-								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-								amet sint. Velit officia conse duis enim velit mollit.
-								Exercitation veniam.
-							</p>
-							<p class='mt-6 text-xl leading-relaxed text-gray-900'>
-								Velit officia conse duis enim velit mollit. Exercit ation veniam
-								consequat sunt nostrud amet.
-							</p>
+									<div className='flex items-center flex-wrap '>
+										<button className='flex items-center bg-rustyRed px-12 py-2 rounded-full text-white'>
+											Profile
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='p-4 md:w-1/3'>
+							<div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
+								<img
+									className='lg:h-48 md:h-36 w-full object-cover object-center'
+									src={TrackImage}
+									alt='blog'
+								/>
+								<div className='p-6 '>
+									<h2 className='flex items-center tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
+										CATEGORY
+										<span className=' text-rustyRed inline-flex pl-52'>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+											<ion-icon name='star'></ion-icon>
+										</span>
+									</h2>
+									<h1 className='title-font text-lg font-medium text-gray-900 mb-3'>
+										The Catalyzer
+									</h1>
+									<p className='leading-relaxed mb-3'>
+										Photo booth fam kinfolk cold-pressed sriracha leggings
+										jianbing microdosing tousled waistcoat.
+									</p>
+
+									<div className='flex items-center flex-wrap '>
+										<button className='flex items-center bg-rustyRed px-12 py-2 rounded-full text-white'>
+											Profile
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			{/* about us section end */}
+			<div>
+      <div className='p-10'>
+        <div className='flex justify-center items-center gap-2 '>
+          <Carousel />
+        </div>
+      </div>
+    </div>
+
+{/* extra */}
+
+
+
 		</>
 	);
 };

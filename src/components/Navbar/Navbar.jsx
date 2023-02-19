@@ -3,7 +3,7 @@ import logo from "../../assets/images/Logo.png";
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	let className =
-		"lg:relative transition-opacity lg:opacity-100 ease-linear duration-300 absolute left-0 lg:mt-0 mt-5 w-full lg:w-auto bg-copper-red lg:bg-transparent ";
+		"lg:relative  transition-opacity lg:opacity-100 ease-linear duration-300 absolute left-0 lg:mt-0 mt-5 w-full lg:w-auto bg-copper-red lg:bg-transparent ";
 	if (isOpen) {
 		className += "lg:opacity-100 opacity-100";
 	} else {
@@ -13,7 +13,7 @@ const Navbar = () => {
 		<>
 			{/* top Banner start */}
 			<nav className='text-white bg-blueStone'>
-				<div className='container mx-auto py-1.5 px-5 flex items-center gap-4'>
+				<div className='lg:container mx-auto py-3 px-5 flex items-center gap-4'>
 					<div className='flex items-center gap-2'>
 						<ion-icon name='mail-outline'></ion-icon>
 						<a className='text-xs' href='mailto:ramhas12@gmail.com'>
@@ -43,7 +43,7 @@ const Navbar = () => {
 						</span>
 					</div>
 					<div className={className}>
-						<ul className='lg:space-x-3 container mx-auto p-5  text-xl duration-500 flex lg:items-center items-start lg:flex-row flex-col gap-5'>
+						<ul className=' lg:space-x-3 container mx-auto p-5  text-xl duration-500 flex lg:items-center items-start lg:flex-row flex-col gap-5'>
 							{["Home", "About Us", "Our Services", "Contact", "Schools"].map(
 								(item, index) => {
 									return (
@@ -59,19 +59,17 @@ const Navbar = () => {
 									);
 								}
 							)}
-							<div className='w-px h-5 bg-black/20'></div>
 
-							<li className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-								Login
-							</li>
-							<a
-								href='#'
-								title=''
-								className='inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold bg-rustyRed  text-white border-2 border-rustyRed hover:bg-white hover:text-black transition-all duration-200 focus:bg-black focus:text-white'
-								role='button'>
-								{" "}
-								Try for free{" "}
-							</a>
+							<div className='flex items-center gap-4 pl-24'>
+								<li className='cursor-pointer text-base font-semibold border border-black px-12 py-3 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
+									Login
+								</li>
+								<a
+									href='#'
+									className='text-base font-semibold border border-rustyRed bg-rustyRed px-12 py-3 rounded-full text-white transition-all duration-200 hover:bg-blueStone'>
+									Sigup
+								</a>
+							</div>
 						</ul>
 					</div>
 				</div>
