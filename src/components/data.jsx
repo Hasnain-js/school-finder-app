@@ -5,3 +5,5 @@ export const initalState = [
     { idx: 3, pos: 3, text: "3", active: true },
     { idx: 4, pos: 4, text: "4", active: false },
   ];
+
+  

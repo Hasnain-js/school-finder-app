@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const About = () => {
 	return (
 		<>
+			<Navbar />
 			{/* about us section */}
 			<section className='py-10 bg-white sm:py-16 lg:py-24'>
 				<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
@@ -50,6 +53,7 @@ const About = () => {
 				</div>
 			</section>
 			{/* about us section end */}
+			<Footer />
 		</>
 	);
 };

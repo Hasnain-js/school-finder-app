@@ -11,27 +11,8 @@ const Navbar = () => {
 	}
 	return (
 		<>
-			{/* top Banner start */}
-			<nav className='text-white bg-blueStone'>
-				<div className='lg:container mx-auto py-3 px-5 flex items-center gap-4'>
-					<div className='flex items-center gap-2'>
-						<ion-icon name='mail-outline'></ion-icon>
-						<a className='text-xs' href='mailto:ramhas12@gmail.com'>
-							ramhas12@gmail.com
-						</a>
-					</div>
-					<div className='flex items-center gap-2'>
-						<ion-icon name='call-outline'></ion-icon>
-						<a className='text-xs' href='01020929929'>
-							012345678789
-						</a>
-					</div>
-				</div>
-			</nav>
-			{/* top navbar end */}
-
-			<nav className='bg-white shadow z-30 relative lg:px-20'>
-				<div className='container mx-auto p-5 lg:flex lg:items-center lg:justify-between'>
+			<nav className='bg-roseWhite bg-opacity-90 z-30 sticky top-0 left-0 right-0 lg:px-20'>
+				<div className='container mx-auto px-5 py-2 lg:flex lg:items-center lg:justify-between'>
 					<div className='flex justify-between items-center'>
 						<a className='cursor-pointer'>
 							<img className='w-40 h-auto inline cursor-pointer' src={logo} />
