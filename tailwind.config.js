@@ -22,6 +22,7 @@ module.exports = {
 				balticSea: "#292929",
 				roseWhite: "#FFF7F4",
 				darkGrey: "#2B3240",
+				LightGreyText:"#ACACAC"
 			},
 		},
 	},
