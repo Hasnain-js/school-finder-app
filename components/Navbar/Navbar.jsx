@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import Link from "next/link";
+import { useState } from "react";
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	let className =
@@ -8,6 +9,25 @@ const Navbar = () => {
 	} else {
 		className += "lg:opacity-100 opacity-0";
 	}
+
+	const navLink = [
+		{
+			page: "Home",
+			link: "/",
+		},
+		{
+			page: "About Us",
+			link: "/about",
+		},
+		{
+			page: "Our Schools",
+			link: "/our-schools",
+		},
+		{
+			page: "Contact",
+			link: "/contact",
+		},
+	];
 	return (
 		<>
 			<nav className='bg-roseWhite bg-opacity-90 z-30 sticky top-0 left-0 right-0 lg:px-20'>
@@ -22,26 +42,24 @@ const Navbar = () => {
 						<span
 							className='text-3xl cursor-pointer mx-2 lg:hidden block'
 							onClick={() => setIsOpen(!isOpen)}>
-							<ion-icon name='menu' onclick='Menu(this)'></ion-icon>
+							<ion-icon name='menu'></ion-icon>
 						</span>
 					</div>
 					<div className={className}>
 						<ul className=' lg:space-x-3 container mx-auto p-5  text-xl duration-500 flex lg:items-center items-start lg:flex-row flex-col gap-5'>
-							{["Home", "About Us", "Our Services", "Contact", "Schools"].map(
-								(item, index) => {
-									return (
-										<li
-											key={index}
-											className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
-											<a
-												href={index}
-												className='text-white lg:text-black  hover:text-rustyRed'>
-												{item}
-											</a>
-										</li>
-									);
-								}
-							)}
+							{navLink.map((item, index) => {
+								return (
+									<li
+										key={index}
+										className='text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80'>
+										<Link
+											href={item.link}
+											className='text-white whitespace-nowrap lg:text-black  hover:text-rustyRed'>
+											{item.page}
+										</Link>
+									</li>
+								);
+							})}
 
 							<div className='flex items-center gap-4 pl-24'>
 								<li className='cursor-pointer text-base font-semibold border border-black px-12 py-3 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>

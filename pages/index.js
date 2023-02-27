@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -6,12 +5,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
 	return (
 		<>
-			<Head>
-				<title>School Finder app</title>
-				<meta name='description' content='Door to the future' />
-				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
 			<main>
 				{/* Heroic Section */}
 				<div
@@ -218,7 +211,12 @@ export default function Home() {
 						</h2>
 						<div className=' pt-20 pl-48 pr-48 flex items-center flex-row '>
 							<div className='p-3 border rounded-lg w-96 h-[58vh]'>
-								<img className='rounded-lg' src='/images/banner-2.jpg' alt='' srcset='' />
+								<img
+									className='rounded-lg'
+									src='/images/banner-2.jpg'
+									alt=''
+									srcset=''
+								/>
 								<div className='flex items-center pt-3'>
 									<p className='grow text-LightGreyText text-base	'>
 										UI UX Design
