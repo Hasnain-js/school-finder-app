@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		"./src/**/*.{js,jsx,ts,tsx}",
-		"./public/**/*.html",
-		"./public/*.html",
-		"./src/**/*.js",
-		"./src/*.js",
-		"./src/**/*.html",
-		"./src/*.html",
-		"./public/**/*.js",
-		"./public/*.js",
+		"./app/**/*.{js,ts,jsx,tsx}",
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+
+		// Or if using `src` directory:
+		"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
 		extend: {
@@ -22,7 +19,7 @@ module.exports = {
 				balticSea: "#292929",
 				roseWhite: "#FFF7F4",
 				darkGrey: "#2B3240",
-				LightGreyText:"#ACACAC"
+				LightGreyText: "#ACACAC",
 			},
 		},
 	},

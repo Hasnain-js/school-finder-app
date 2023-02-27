@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 
 const About = () => {
 	return (
 		<>
-			<Navbar />
 			{/* about us section */}
 			<section className='py-10 bg-white sm:py-16 lg:py-24'>
 				<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
@@ -17,7 +14,7 @@ const About = () => {
 								alt=''
 							/>
 							<div className='pl-12 pr-6'>
-								<img className='relative ' src={AboutusImage} alt='' />
+								{/* <img className='relative ' src={AboutusImage} alt='' /> */}
 							</div>
 							<div className='absolute left-0 pr-12 bottom-8 xl:bottom-20'>
 								<div className='max-w-xs bg-rustyRed rounded-lg sm:max-w-md xl:max-w-md'>
@@ -53,7 +50,6 @@ const About = () => {
 				</div>
 			</section>
 			{/* about us section end */}
-			<Footer />
 		</>
 	);
 };

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/Logo.png";
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	let className =
@@ -15,7 +14,10 @@ const Navbar = () => {
 				<div className='container mx-auto px-5 py-2 lg:flex lg:items-center lg:justify-between'>
 					<div className='flex justify-between items-center'>
 						<a className='cursor-pointer'>
-							<img className='w-40 h-auto inline cursor-pointer' src={logo} />
+							<img
+								className='w-40 h-auto inline cursor-pointer'
+								src='/images/logo.svg'
+							/>
 						</a>
 						<span
 							className='text-3xl cursor-pointer mx-2 lg:hidden block'
