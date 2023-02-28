@@ -37,6 +37,7 @@ const Navbar = () => {
 							<img
 								className='w-40 h-auto inline cursor-pointer'
 								src='/images/logo.svg'
+								alt="logo"
 							/>
 						</a>
 						<span

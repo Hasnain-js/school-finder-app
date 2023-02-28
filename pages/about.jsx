@@ -18,13 +18,13 @@ const About = () => {
 							<img
 								className='absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4'
 								src='https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg'
-								alt=''
+								alt='dot-pattern'
 							/>
 							<div className='pl-12 pr-6'>
 								<img
 									className=' object-cover '
 									src='images\about-feature-image.png'
-									alt=''
+									alt='about-feature-image'
 								/>
 							</div>
 							<div className='absolute left-0 pr-12 bottom-8 xl:bottom-20'>

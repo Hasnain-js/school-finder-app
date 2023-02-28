@@ -104,7 +104,7 @@ export default function Home() {
 									<img
 										className='absolute left-auto opacity-20 -top-5 right-0 z-10 h-60'
 										src='/images/big-search.png'
-										alt=''
+										alt='big-search'
 									/>
 									<img
 										className='opacity-100 w-full z-20 relative'
@@ -231,8 +231,7 @@ export default function Home() {
 										<img
 											className='rounded-lg'
 											src='/images/banner-2.jpg'
-											alt=''
-											srcset=''
+											alt='banner-2'
 										/>
 										<div className='flex items-center pt-3'>
 											<p className='grow text-LightGreyText text-base	'>
@@ -379,8 +378,7 @@ export default function Home() {
 										<img
 											className='rounded-lg'
 											src='/images/banner-2.jpg'
-											alt=''
-											srcset=''
+											alt='banner-2'
 										/>
 										<div className='flex items-center pt-3'>
 											<p className='grow text-LightGreyText text-base	'>
@@ -527,8 +525,7 @@ export default function Home() {
 										<img
 											className='rounded-lg'
 											src='/images/banner-2.jpg'
-											alt=''
-											srcset=''
+											alt='banner-2'
 										/>
 										<div className='flex items-center pt-3'>
 											<p className='grow text-LightGreyText text-base	'>
@@ -675,8 +672,7 @@ export default function Home() {
 										<img
 											className='rounded-lg'
 											src='/images/banner-2.jpg'
-											alt=''
-											srcset=''
+											alt='banner-2'
 										/>
 										<div className='flex items-center pt-3'>
 											<p className='grow text-LightGreyText text-base	'>
@@ -855,11 +851,11 @@ export default function Home() {
 							</div>
 						</form>
 						<div className='absolute left-[6rem] top-[152px]  '>
-							<img className='w-36' src='/images/footertop.png' alt='' />
+							<img className='w-36' src='/images/footertop.png' alt='footertop' />
 						</div>
 
 						<div className='absolute right-[10rem] top-[152px]  '>
-							<img className='w-36' src='/images/footertop2.png' alt='' />
+							<img className='w-36' src='/images/footertop2.png' alt='footertop2' />
 						</div>
 					</div>
 				</div>

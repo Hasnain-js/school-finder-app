@@ -55,8 +55,8 @@ export default function OurSchool() {
 									<img
 										className='rounded-lg'
 										src='/images/banner-2.jpg'
-										alt=''
-										srcset=''
+										alt='banner-2'
+										
 									/>
 									<div className='flex items-center pt-3'>
 										<p className='grow text-LightGreyText text-base	'>
