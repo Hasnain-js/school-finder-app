@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 export default function Footer() {
 	return (
 		<>
@@ -6,7 +8,7 @@ export default function Footer() {
 				<div className='container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col'>
 					<div className='w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left'>
 						<a className='flex title-font font-medium items-center md:justify-start justify-center '>
-							<img
+							<Image
 								className='w-[200px] h-[82px]'
 								src='images/white-Logo.png'
 								alt='logo'
@@ -15,7 +17,7 @@ export default function Footer() {
 						<p className='mt-2 text-sm text-[#949494]'>
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy a
-							type specimen book.{" "}
+							type specimen book.
 						</p>
 					</div>
 					<div className='flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center'>

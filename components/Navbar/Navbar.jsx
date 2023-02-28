@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	let className =
@@ -34,7 +36,7 @@ const Navbar = () => {
 				<div className='container mx-auto px-5 py-2 lg:flex lg:items-center lg:justify-between'>
 					<div className='flex justify-between items-center'>
 						<a className='cursor-pointer'>
-							<img
+							<Image
 								className='w-40 h-auto inline cursor-pointer'
 								src='/images/logo.svg'
 								alt="logo"
