@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OurSchool() {
 	return (
 		<div>
@@ -52,11 +54,11 @@ export default function OurSchool() {
 						{[1, 2, 4, 5, 6, 7, 8, 9, 10,11,12,13].map((items, index) => {
 							return (
 								<div key={index} className='p-3 rounded-lg shadow-lg my-5'>
-									<img
+									<Image
 										className='rounded-lg'
 										src='/images/banner-2.jpg'
-										alt=''
-										srcset=''
+										alt='banner-2'
+										
 									/>
 									<div className='flex items-center pt-3'>
 										<p className='grow text-LightGreyText text-base	'>
