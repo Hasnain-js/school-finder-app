@@ -27,6 +27,10 @@ const Navbar = () => {
 			page: "Contact",
 			link: "/contact",
 		},
+		{
+			page: "Profile",
+			link: "/profile",
+		},
 	];
 	return (
 		<>

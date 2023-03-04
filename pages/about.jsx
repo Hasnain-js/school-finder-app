@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<>
 			{/* about us section */}
-			<section className=' '>
+			<section>
 				<div className='flex items-center'>
 					<div className='flex items-center justify-center w-full h-96 bg-[#F2E1CE]'>
 						<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
