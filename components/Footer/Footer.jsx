@@ -10,7 +10,9 @@ export default function Footer() {
 						<a className='flex title-font font-medium items-center md:justify-start justify-center '>
 							<Image
 								className='w-[200px] h-[82px]'
-								src='images/white-Logo.png'
+								width={100}
+								height={100}
+								src='/images/white-Logo.png'
 								alt='logo'
 							/>
 						</a>

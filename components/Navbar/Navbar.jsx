@@ -42,6 +42,8 @@ const Navbar = () => {
 						<a className='cursor-pointer'>
 							<Image
 								className='w-40 h-auto inline cursor-pointer'
+								width={200}
+								height={200}
 								src='/images/logo.svg'
 								alt="logo"
 							/>
