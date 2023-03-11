@@ -51,14 +51,13 @@ export default function OurSchool() {
 						Our Schools
 					</h2>
 					<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto gap-5'>
-						{[1, 2, 4, 5, 6, 7, 8, 9, 10,11,12,13].map((items, index) => {
+						{[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((items, index) => {
 							return (
 								<div key={index} className='p-3 rounded-lg shadow-lg my-5'>
 									<Image
 										className='rounded-lg'
 										src='/images/banner-2.jpg'
 										alt='banner-2'
-										
 									/>
 									<div className='flex items-center pt-3'>
 										<p className='grow text-LightGreyText text-base	'>
@@ -138,7 +137,7 @@ export default function OurSchool() {
 											viewBox='0 0 19 19'
 											fill='none'
 											xmlns='http://www.w3.org/2000/svg'>
-											<g clip-path='url(#clip0_35_8497)'>
+											<g clipPath='url(#clip0_35_8497)'>
 												<path
 													d='M9.50011 0C4.2619 0 0.000457764 4.26167 0.000457764 9.49989C0.000457764 14.7383 4.2619 19 9.50011 19C14.7383 19 19 14.7383 19 9.49989C19 4.26167 14.7381 0 9.50011 0ZM9.50011 17.6265C5.01937 17.6265 1.37371 13.9809 1.37371 9.49989C1.37371 5.01892 5.01914 1.37348 9.50011 1.37348C13.9811 1.37348 17.6265 5.01892 17.6265 9.49989C17.6265 13.9809 13.9811 17.6265 9.50011 17.6265Z'
 													fill='black'
