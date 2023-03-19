@@ -1,3 +1,4 @@
+import { HeroicSection } from "@/components/HeroicSection";
 import React from "react";
 
 export default function contact() {
@@ -10,6 +11,14 @@ export default function contact() {
 					</h1>
 				</div>
 			</div>
+
+			{/* <HeroicSection>
+				<div className='flex items-center justify-center w-full h-96'>
+					<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
+						Contact Us
+					</h1>
+				</div>
+			</HeroicSection> */}
 
 			<section className='relative z-10 overflow-hidden bg-white py-20 px-52 lg:py-[120px]'>
 				<div className='container mx-auto'>

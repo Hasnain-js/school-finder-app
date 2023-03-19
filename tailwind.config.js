@@ -20,8 +20,9 @@ module.exports = {
 				roseWhite: "#FFF7F4",
 				darkGrey: "#2B3240",
 				LightGreyText: "#ACACAC",
+				almond: "#F2E1CE",
+				gunMetal:"#2B3240"
 			},
-		
 		},
 	},
 	plugins: [],

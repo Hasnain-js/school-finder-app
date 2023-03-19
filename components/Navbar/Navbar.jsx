@@ -36,7 +36,7 @@ const Navbar = () => {
 	];
 	return (
 		<>
-			<nav className='bg-roseWhite bg-opacity-90 z-30 sticky top-0 left-0 right-0 lg:px-20'>
+			<nav className='bg-almond bg-opacity-95 z-30 sticky top-0 left-0 right-0 lg:px-20'>
 				<div className='container mx-auto px-5 py-2 lg:flex lg:items-center lg:justify-between'>
 					<div className='flex justify-between items-center'>
 						<a className='cursor-pointer'>
