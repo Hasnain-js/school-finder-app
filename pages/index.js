@@ -17,15 +17,15 @@ export default function Home() {
 			<main>
 				{/* Heroic Section */}
 				<div className='relative bg-almond overflow-hidden bg-no-repeat bg-contain bg-center bg-[url("/images/Heroic-Banner.png")]'>
-					<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+					<div className='mx-auto max-w-7xl px-6 border'>
 						<div className='grid items-center grid-cols-1 gap-12 lg:grid-cols-2 justify-items-center'>
 							<div className='space-y-4'>
-								<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
+								<h1 className='font-bold text-black lg:text-7xl text-6xl'>
 									Get
 									<span className='text-rustyRed'> Schools</span>
 									<div className='relative inline-flex'>
 										<span className='absolute inset-x-0 bottom-0'></span>
-										<h1 className=' flex relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
+										<h1 className=' flex relative font-bold text-black text-6xl lg:text-7xl'>
 											Inside
 											<span className='w-fit'>
 												<svg
@@ -105,9 +105,9 @@ export default function Home() {
 
 				{/* lower banner section */}
 				<section className='bg-gunMetal text-white body-font'>
-					<div className='container px-36 py-12 mx-auto'>
-						<div className='flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-2 md:space-y-0 space-y-6'>
-							<div className='p-6 md:w-1/3 flex'>
+					<div className='max-w-7xl px-6 py-16 mx-auto'>
+						<div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
+							<div className='p-6 flex items-start'>
 								<div className='w-12 h-12 inline-flex items-center justify-center rounded-lg bg-white bg-opacity-20 text-white  mb-4 flex-shrink-0'>
 									<svg
 										className='w-8 h-8'
@@ -169,7 +169,7 @@ export default function Home() {
 									</p>
 								</div>
 							</div>
-							<div className='p-4 md:w-1/3 flex'>
+							<div className='p-4 flex items-start'>
 								<div className='w-12 h-12 inline-flex items-center justify-center rounded-lg bg-white bg-opacity-20 text-white  mb-4 flex-shrink-0'>
 									<svg
 										className='w-8 h-8'
@@ -217,7 +217,7 @@ export default function Home() {
 									</p>
 								</div>
 							</div>
-							<div className='p-4 md:w-1/3 flex'>
+							<div className='p-4 flex items-start'>
 								<div className='w-12 h-12 inline-flex items-center justify-center rounded-lg bg-white bg-opacity-20 text-white  mb-4 flex-shrink-0'>
 									<svg
 										className='w-8 h-8'
