@@ -56,7 +56,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className={className}>
-            <div className="flex lg:flex-row flex-col gap-x-14 gap-y-5 lg:py-0 py-4">
+            <div className="flex lg:flex-row flex-col gap-x-14 gap-y-5 lg:py-0 py-4 lg:px-0 px-6">
               <div className="flex lg:items-center items-start lg:flex-row flex-col gap-5">
                 {navLink.map((item, index) => {
                   return (
