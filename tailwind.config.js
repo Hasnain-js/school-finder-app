@@ -22,6 +22,7 @@ module.exports = {
 				LightGreyText: "#ACACAC",
 				almond: "#F2E1CE",
 				gunMetal:"#2B3240"
+				
 			},
 		},
 	},
