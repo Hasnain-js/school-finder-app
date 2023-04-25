@@ -145,7 +145,7 @@ export default function Home() {
 								width={776}
 								height={475}
 								className='opacity-100 w-full z-20 relative lg:block hidden'
-								src='/images/home-banner-img.png'
+								src='/images/Home-banner-img.png'
 								alt='Banner image'
 							/>
 						</div>
