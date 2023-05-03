@@ -21,7 +21,8 @@ module.exports = {
 				darkGrey: "#2B3240",
 				LightGreyText: "#ACACAC",
 				almond: "#F2E1CE",
-				gunMetal:"#2B3240"
+				gunMetal:"#2B3240",
+				silverGrey:"#949494"
 				
 			},
 		},

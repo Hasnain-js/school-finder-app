@@ -24,7 +24,7 @@ export default function Home() {
 		<>
 			<main>
 				{/* Heroic Section */}
-				<div className='relative bg-almond overflow-hidden bg-no-repeat bg-contain bg-center bg-[url("/images/Heroic-Banner.png")]'>
+				<div className=' relative bg-almond overflow-hidden bg-no-repeat bg-contain bg-center bg-[url("/images/Heroic-Banner.png")]'>
 					<div className='mx-auto max-w-7xl px-6'>
 						<div className='grid items-center grid-cols-1 gap-12 lg:grid-cols-2 justify-items-center'>
 							<div className='flex flex-col items-start gap-9'>
@@ -362,6 +362,7 @@ export default function Home() {
 						<Swiper
 							slidesPerView={1}
 							spaceBetween={10}
+							autoplay={3000}
 							navigation={true}
 							breakpoints={{
 								640: {
@@ -398,14 +399,63 @@ export default function Home() {
 					</div>
 				</section>
 
+
+	{/* cookies section */}
+	<section class='bg-blue-600 2xl:py-24 2xl:bg-white'>
+					<div class=' mx-auto overflow-hidden bg-almond  sm:px-6 lg:px-8'>
+						<div class=' sm:py-16 lg:py-24 '>
+							<div class='grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20'>
+
+								<div class='relative'>
+								
+									<img
+										class='relative w-full max-w-xs mx-auto -mb-60 '
+										src='images/girl_books.png'
+										alt=''
+									/>
+								</div>
+								<div>
+									<h2 class='text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight'>
+										Use mobile app for better performance
+									</h2>
+									<p class='mt-4 text-base text-gray-50'>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+
+									<div class='flex flex-row items-center mt-8 space-x-4 lg:mt-12'>
+										<a href='#' title='' class='flex' role='button'>
+											<img
+												class='w-auto h-14'
+												src='https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg'
+												alt=''
+											/>
+										</a>
+
+										<a href='#' title='' class='flex' role='button'>
+											<img
+												class='w-auto h-14'
+												src='https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-play-store.svg'
+												alt=''
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
 				{/* review component */}
 
-				<section className='py-24 px-6 max-w-7xl mx-auto'>
+				<section className='relative py-24 px-6 max-w-7xl mx-auto'>
 					<div className=' flex-col flex items-center'>
 						<h2 className='text-black text-center text-3xl font-semibold leading-tight mb-5 sm:text-4xl lg:text-5xl lg:leading-tight'>
 							Our Reviews
 						</h2>
-						<p className='text-LightGreyText text-[24px]'>
+						<p className='text-[#8A8A8A] text-[24px]'>
 							Lorem Ipsum is simply dummy text of the printing.
 						</p>
 
@@ -444,7 +494,22 @@ export default function Home() {
 							})}
 						</Swiper>
 					</div>
+					<Image
+						width={120}
+						height={68}
+						className='absolute bottom-10 right-0 opacity-100'
+						src='/images/planet.png'
+						alt='Banner image'
+					/>
+					<Image
+						width={120}
+						height={68}
+						className='absolute bottom-10 left-0 opacity-100'
+						src='/images/orange-arrow.png'
+						alt='Banner image'
+					/>
 				</section>
+			
 			</main>
 		</>
 	);

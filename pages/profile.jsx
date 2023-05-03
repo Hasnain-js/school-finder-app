@@ -2,209 +2,150 @@ import React from "react";
 const Profile = () => {
 	return (
 		<>
-			<section>
-				<div className='flex items-center'>
-					<div className=' w-full h-80 bg-[#F2E1CE]'>
-						<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'></h1>
-					</div>
+			<section className=''>
+				<div className='w-full h-56 bg-[#F2E1CE]'></div>
+				<div className='flex items-stretch justify-start'>
+					<aside class='flex flex-col w-64 h-screen px-4 pb-8  bg-transparent border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700'>
+						<div class='flex flex-col items-center -mt-12 -mx-2'>
+							<img
+								class='object-cover w-24 h-24 mx-2 rounded-full'
+								src='https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+								alt='avatar'
+							/>
+							<h4 class='mx-2 mt-2 font-medium text-gray-800 dark:text-gray-200'>
+								John Doe
+							</h4>
+							<p class='mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400'>
+								john@example.com
+							</p>
+						</div>
+						<div class='flex flex-col justify-between flex-1 mt-6'>
+							<nav>
+								<a
+									class='flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-800 dark:text-gray-200'
+									href='#'>
+									<svg
+										class='w-5 h-5'
+										viewBox='0 0 24 24'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+									</svg>
+
+									<span class='mx-4 font-medium'>Dashboard</span>
+								</a>
+
+								<a
+									class='flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700'
+									href='#'>
+									<svg
+										class='w-5 h-5'
+										viewBox='0 0 24 24'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+										<path
+											d='M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+									</svg>
+
+									<span class='mx-4 font-medium'>Accounts</span>
+								</a>
+
+								<a
+									class='flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700'
+									href='#'>
+									<svg
+										class='w-5 h-5'
+										viewBox='0 0 24 24'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+									</svg>
+
+									<span class='mx-4 font-medium'>Tickets</span>
+								</a>
+
+								<a
+									class='flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700'
+									href='#'>
+									<svg
+										class='w-5 h-5'
+										viewBox='0 0 24 24'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+										<path
+											d='M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z'
+											stroke='currentColor'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+									</svg>
+
+									<span class='mx-4 font-medium'>Settings</span>
+								</a>
+							</nav>
+						</div>
+					</aside>
+					<aside className='mt-12 w-full'>
+						{/* Tabs buttons */}
+						<div class='flex items-end justify-between overflow-x-auto overflow-y-hidden border-b border-gray-200 whitespace-nowrap dark:border-gray-700'>
+							<div className='flex'>
+								<button class='inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 sm:text-base dark:border-blue-400 dark:text-blue-300 whitespace-nowrap focus:outline-none'>
+									Profile
+								</button>
+
+								<button class='inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400'>
+									Account
+								</button>
+
+								<button class='inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400'>
+									Notification
+								</button>
+							</div>
+							<div className='flex px-4 pb-2'>
+								<button class='px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
+									Primary
+								</button>
+							</div>
+						</div>
+						{/* Tabs body */}
+						<div className="">
+							
+						</div>
+					</aside>
 				</div>
-				<div className='flex items-center justify-center'>
-					<img className="relative bg-no-repeat bg-cover -top-36 right-0 h-56 w-56 my-1 border-2 border-white rounded-full" src='images\school-1.jpg' alt='' />
-				</div>
-				<div className="bg-gray-100">
-
-    <div className="container mx-auto  p-5">
-        <div className="md:flex no-wrap md:-mx-2 ">
-            <div className="w-full md:w-3/12 md:mx-2">
-                <div className="bg-white p-3 border-t-4 border-rustyRed">
-                    <div className="image overflow-hidden">
-                        <img className="h-auto w-full mx-auto"
-                        
-                            src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg"
-                            alt=""/>
-                    </div>
-                    <h1 className="text-gray-900 font-bold text-xl leading-8 my-1">Jane Doe</h1>
-                    <h3 className="text-gray-600 font-lg text-semibold leading-6">Owner at Her Company Inc.</h3>
-                    <p className="text-sm text-gray-500 hover:text-gray-600 leading-6">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Reprehenderit, eligendi dolorum sequi illum qui unde aspernatur non deserunt</p>
-                    <ul
-                        className="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
-                        <li className="flex items-center py-3">
-                            <span>Status</span>
-                            <span className="ml-auto"><span
-                                    className="bg-rustyRed py-1 px-2 rounded text-white text-sm">Active</span></span>
-                        </li>
-                        <li className="flex items-center py-3">
-                            <span>Member since</span>
-                            <span className="ml-auto">Nov 07, 2016</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="my-4"></div>
-                <div className="bg-white p-3 hover:shadow">
-                    <div className="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
-                        <span className="text-green-500">
-                            <svg className="h-5 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </span>
-                        <span>Similar Profiles</span>
-                    </div>
-                    <div className="grid grid-cols-3">
-                        <div className="text-center my-2">
-                            <img className="h-16 w-16 rounded-full mx-auto"
-                                src="https://cdn.australianageingagenda.com.au/wp-content/uploads/2015/06/28085920/Phil-Beckett-2-e1435107243361.jpg"
-                                alt=""/>
-                            <a href="#" className="text-main-color">Kojstantin</a>
-                        </div>
-                        <div className="text-center my-2">
-                            <img className="h-16 w-16 rounded-full mx-auto"
-                                src="https://avatars2.githubusercontent.com/u/24622175?s=60&amp;v=4"
-                                alt=""/>
-                            <a href="#" className="text-main-color">James</a>
-                        </div>
-                        <div className="text-center my-2">
-                            <img className="h-16 w-16 rounded-full mx-auto"
-                                src="h/ttps://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg"
-                                alt=""/>
-                            <a href="#" className="text-main-color">Natie</a>
-                        </div>
-                        <div className="text-center my-2">
-                            <img className="h-16 w-16 rounded-full mx-auto"
-                                src="https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/f04b52da-12f2-449f-b90c-5e4d5e2b1469_361x361.png"
-                                alt=""/>
-                            <a href="#" className="text-main-color">Casey</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="w-full md:w-9/12 mx-2 h-64">
-          
-                <div className="bg-white p-3 shadow-sm rounded-sm">
-                    <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
-                        <span clas="text-green-500">
-                            <svg className="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </span>
-                        <span className="tracking-wide">About</span>
-                    </div>
-                    <div className="text-gray-700">
-                        <div className="grid md:grid-cols-2 text-sm">
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">First Name</div>
-                                <div className="px-4 py-2">Jane</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Last Name</div>
-                                <div className="px-4 py-2">Doe</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Gender</div>
-                                <div className="px-4 py-2">Female</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Contact No.</div>
-                                <div className="px-4 py-2">+11 998001001</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Current Address</div>
-                                <div className="px-4 py-2">Beech Creek, PA, Pennsylvania</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Permanant Address</div>
-                                <div className="px-4 py-2">Arlington Heights, IL, Illinois</div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Email.</div>
-                                <div className="px-4 py-2">
-                                    <a className="text-blue-800" href="mailto:jane@example.com">jane@example.com</a>
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-2">
-                                <div className="px-4 py-2 font-semibold">Birthday</div>
-                                <div className="px-4 py-2">Feb 06, 1998</div>
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        className="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show
-                        Full Information</button>
-                </div>
-
-                <div className="my-4"></div>
-
-                <div className="bg-white p-3 shadow-sm rounded-sm">
-
-                    <div className="grid grid-cols-2">
-                        <div>
-                            <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
-                                <span clas="text-green-500">
-                                    <svg className="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                    </svg>
-                                </span>
-                                <span className="tracking-wide">Experience</span>
-                            </div>
-                            <ul className="list-inside space-y-2">
-                                <li>
-                                    <div className="text-teal-600">Owner at Her Company Inc.</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                                <li>
-                                    <div className="text-teal-600">Owner at Her Company Inc.</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                                <li>
-                                    <div className="text-teal-600">Owner at Her Company Inc.</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                                <li>
-                                    <div className="text-teal-600">Owner at Her Company Inc.</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
-                                <span clas="text-green-500">
-                                    <svg className="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
-                                        <path fill="#fff"
-                                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                                    </svg>
-                                </span>
-                                <span className="tracking-wide">Education</span>
-                            </div>
-                            <ul className="list-inside space-y-2">
-                                <li>
-                                    <div className="text-teal-600">Masters Degree in Oxford</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                                <li>
-                                    <div className="text-teal-600">Bachelors Degreen in LPU</div>
-                                    <div className="text-gray-500 text-xs">March 2020 - Now</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
 			</section>
-
 		</>
 	);
 };

@@ -8,7 +8,8 @@ export const Review = ({ titleHead, titlePara }) => {
 					<div className='flex flex-col text-center w-full mb-10'></div>
 					<div className='flex flex-wrap'>
 						<div className='p-4 lg:w-full md:w-auto'>
-							<div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col'>
+							<div
+								className='flex rounded-lg h-full shadow-md p-8 flex-col'>
 								<div className='flex-grow'>
 									<p className='leading-relaxed text-base'>{titlePara}</p>
 								</div>
@@ -25,7 +26,7 @@ export const Review = ({ titleHead, titlePara }) => {
 											<path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
 										</svg>
 									</div>
-									<h2 className='text-gray-900 text-lg title-font font-medium'>
+									<h2 className='text-silverGrey text-lg title-font font-medium'>
 										{titleHead}
 									</h2>
 								</div>
