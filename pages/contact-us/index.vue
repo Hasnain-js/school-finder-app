@@ -1,3 +1,0 @@
-<template>
-    COntact us
-</template>
