@@ -18,7 +18,6 @@ module.exports = {
 				frenchBlue: "#0C70BD",
 				balticSea: "#292929",
 				roseWhite: "#FFF7F4",
-				darkGrey: "#2B3240",
 				LightGreyText: "#ACACAC",
 				almond: "#F2E1CE",
 				gunMetal:"#2B3240",

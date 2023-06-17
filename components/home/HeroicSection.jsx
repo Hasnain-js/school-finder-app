@@ -3,7 +3,7 @@ import React from "react";
 
 export const HeroicSection = () => {
     return (
-        <div className='relative bg-almond overflow-hidden bg-no-repeat bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
+        <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 justify-items-center">
             <div className="flex flex-col items-start gap-9">

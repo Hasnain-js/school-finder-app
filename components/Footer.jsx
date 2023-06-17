@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="text-white body-font bg-darkGrey pl-40 pr-40 ">
+      <footer className="text-white body-font bg-gunMetal pl-40 pr-40 ">
         <div className="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a className="flex title-font font-medium items-center md:justify-start justify-center ">
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="text-center bg-darkGrey border-t-[0.5px] border-[#B7B7B7] py-4">
+      <div className="text-center bg-gunMetal border-t-[0.5px] border-[#B7B7B7] py-4">
         <p className="text-[#606060]">BookStore All Right Reserved, 2022</p>
       </div>
     </>
