@@ -54,7 +54,7 @@ export default function OurSchool() {
 						{[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((items, index) => {
 							return (
 								<div key={index} className='p-3 rounded-lg shadow-lg my-5'>
-									<Image
+									<img
 										className='rounded-lg'
 										src='/images/banner-2.jpg'
 										alt='banner-2'
