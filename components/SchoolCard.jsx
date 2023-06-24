@@ -4,7 +4,7 @@ import Image from "next/image";
 export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
   return (
     <>
-      <div className="p-3 rounded-lg shadow-md border hover:shadow-lg my-5 w-full">
+      <div className="p-3 rounded-lg shadow-md hover:shadow-lg my-5 w-full">
         <div className="h-56 w-full relative">
           <Image
             fill
@@ -55,7 +55,7 @@ export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
             </h5>
             <p className="text-base text-rustyRed font-bold">$98</p>
           </div>
-          <div className=" border border-dashed border-t-LightGreyText	"></div>
+          <div className=" border-t border-dashed	border-LightGreyText"></div>
 
           <div className="flex items-center pt-2">
             <svg

@@ -11,11 +11,33 @@ import { LearningExperienceSection } from "@/components/home/LearningExperienceS
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	const ReviewData = {
-		titleHead: "Shooting Stars",
-		titlePara:
-			"Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.",
-	};
+	const ReviewData = [
+		{
+			userReviews: "Teachings of the great explore of truth, the master-builder of human happiness.no one rejects,dislikes, or avoids pleasure itself, pleasure itself",
+			userName: "Hasnain Saeed",
+			userTitle: "Web Developer",
+			userImage: "/images/hasnain-saeed.jpeg",
+		},
+		{
+			userReviews: "Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots",
+			userName: "Ramsha Naseer",
+			userTitle: "Web Developer",
+			userImage: "/images/ramsha.jpg",
+		},
+		{
+			userReviews: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+			userName: "Yawar ali",
+			userTitle: "Web Developer",
+			userImage: "/images/yawar.jpg",
+		},
+		{
+			userReviews: "Teachings of the great explore of truth, the master-builder of human happiness.no one rejects,dislikes, or avoids pleasure itself, pleasure itself",
+			userName: "Hasnain Saeed",
+			userTitle: "Web Developer",
+			userImage: "/images/hasnain-saeed.jpeg",
+		},
+
+	];
 	return (
 		<>
 			<main>
@@ -32,11 +54,11 @@ export default function Home() {
 				<LearningExperienceSection />
 				{/* review component */}
 				<section className='relative py-24 px-6 max-w-7xl mx-auto'>
-					<div className=' flex-col flex items-center'>
-						<h2 className='text-black text-center text-3xl font-semibold leading-tight mb-5 sm:text-4xl lg:text-5xl lg:leading-tight'>
-							Our Reviews
+					<div className=' flex-col gap-5 flex items-center'>
+						<h2 className='text-gunMetal text-center text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight'>
+						What student’s say
 						</h2>
-						<p className='text-[#8A8A8A] text-[24px]'>
+						<p className='text-silverGrey text-2xl font-medium'>
 							Lorem Ipsum is simply dummy text of the printing.
 						</p>
 
@@ -63,12 +85,14 @@ export default function Home() {
 							}}
 							modules={[Navigation, Autoplay, Pagination]}
 							className='custom-swiper'>
-							{[1, 2, 3, 4].map((items) => {
+							{ReviewData.map((review, index) => {
 								return (
-									<SwiperSlide key={items}>
+									<SwiperSlide key={index}>
 										<Review
-											titleHead={ReviewData.titleHead}
-											titlePara={ReviewData.titlePara}
+											userReviews={review.userReviews}
+											userName={review.userName}
+											userTitle={review.userTitle}
+											userImage={review.userImage}
 										/>
 									</SwiperSlide>
 								);

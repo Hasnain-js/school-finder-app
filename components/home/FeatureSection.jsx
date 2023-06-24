@@ -32,7 +32,7 @@ export const FeatureSection = () => {
               return (
                 <>
                   <div className="p-6 flex items-start" key={index}>
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-white bg-opacity-20 text-white  mb-4 flex-shrink-0">
+                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-roseWhite bg-opacity-20 mb-4 flex-shrink-0">
                       <Image
                         src={feature.image}
                         width={32}
@@ -40,7 +40,7 @@ export const FeatureSection = () => {
                         alt="search"
                       />
                     </div>
-                    <div className="flex-grow pl-6">
+                    <div className="flex-grow pl-6 text-roseWhite">
                       <h2 className=" text-lg title-font font-medium mb-2">
                         {feature.title}
                       </h2>

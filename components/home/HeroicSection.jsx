@@ -89,7 +89,7 @@ export const HeroicSection = () => {
                   Find the perfect school for your child with just a few taps
                   using our intuitive school finder app.
                 </p>
-                <div className="relative max-w-md flex items-center justify-between shadow-2xl shadow-[#B1B1B1] w-full p-1 text-sm text-gray-900 rounded-[40px] bg-gray-50">
+                <div className="relative max-w-md flex items-center justify-between shadow-2xl shadow-[#B1B1B1] w-full p-1 text-sm rounded-full bg-white">
                   <div className="flex w-full items-center gap-3">
                     <span className="w-fit h-fit ml-5">
                       <svg
@@ -117,7 +117,7 @@ export const HeroicSection = () => {
 
                   <button
                     type="submit"
-                    className="text-white bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-[40px] text-sm px-9 py-3"
+                    className="text-white bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-9 py-3"
                   >
                     Search
                   </button>

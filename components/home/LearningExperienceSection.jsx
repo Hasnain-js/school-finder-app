@@ -20,7 +20,7 @@ export const LearningExperienceSection = () => {
 						</h2>
 						<div className='flex flex-col items-stretch gap-5'>
 							<div className='flex gap-5 items-start'>
-								<span className='w-12 h-12 bg-gunMetal rounded'></span>
+								<span className='w-12 h-12 bg-dusk rounded'></span>
 								<span className='text-gunMetal space-y-1'>
 									<h6 className='text-base font-semibold'>Easily Accessible</h6>
 									<p class='text-sm text-silverGrey'>
@@ -29,7 +29,7 @@ export const LearningExperienceSection = () => {
 								</span>
 							</div>
 							<div className='flex gap-5 items-start'>
-								<span className='w-12 h-12 bg-gunMetal rounded'></span>
+								<span className='w-12 h-12 bg-dusk rounded'></span>
 								<span className='text-gunMetal space-y-1'>
 									<h6 className='text-base font-semibold'>Fun learning expe</h6>
 									<p class='text-sm text-silverGrey'>
