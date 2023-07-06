@@ -19,14 +19,14 @@ module.exports = {
 			roseWhite: "#FFF7F4",
 			LightGreyText: "#ACACAC",
 			almond: "#F2E1CE",
-			gunMetal:"#2B3240",
-			silverGrey:"#949494",
+			gunMetal: "#2B3240",
+			silverGrey: "#949494",
 			dusk: "#43597D",
 			white: "#FFFFFF",
 			transparent: "transparent",
+			romance: "#E6E5E4",
 		},
-		extend: {
-		},
+		extend: {},
 	},
 	plugins: [],
 };
