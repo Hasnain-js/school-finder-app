@@ -26,6 +26,7 @@ module.exports = {
 			transparent: "transparent",
 			romance: "#E6E5E4",
 		},
+
 		extend: {},
 	},
 	plugins: [],
