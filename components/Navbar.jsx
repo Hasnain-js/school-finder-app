@@ -41,7 +41,7 @@ const Navbar = () => {
 			<nav className='bg-almond bg-opacity-95 z-30 sticky top-0 left-0 right-0'>
 				<div className='px-6 py-2 lg:flex lg:items-center lg:justify-between max-w-7xl lg:mx-auto'>
 					<div className='flex justify-between items-center'>
-						<a className='cursor-pointer'>
+						<Link href={"/"} className='cursor-pointer'>
 							<Image
 								className='w-40 h-auto inline cursor-pointer'
 								width={160}
@@ -49,7 +49,7 @@ const Navbar = () => {
 								src='/images/logo.svg'
 								alt='logo'
 							/>
-						</a>
+						</Link>
 						<span
 							className='text-3xl cursor-pointer mx-2 lg:hidden block'
 							onClick={() => setIsOpen(!isOpen)}>
@@ -71,16 +71,16 @@ const Navbar = () => {
 								})}
 							</div>
 							<div className='flex items-center gap-5'>
-								<a
-									href={Signin}
+								<Link
+									href={"/Signin"}
 									className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
 									Login
-								</a>
-								<a
-									href={Signup}
+								</Link>
+								<Link
+									href={"/Signup"}
 									className='text-base font-semibold border border-rustyRed bg-rustyRed px-8 py-2 rounded-full text-white transition-all duration-200 hover:bg-blueStone'>
 									Sigup
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>

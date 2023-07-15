@@ -64,11 +64,11 @@ const Signup = () => {
 										/>
 									</div>
 									<div className='relative'>
-										<a
+										<button
 											className='w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-rustyRed
                   rounded-lg transition duration-200 hover:bg-indigo-600 ease'>
 											Submit
-										</a>
+										</button>
 									</div>
 								</div>
 							</div>

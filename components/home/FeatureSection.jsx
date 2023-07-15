@@ -30,8 +30,7 @@ export const FeatureSection = () => {
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
             {featureSectionData.map((feature, index) => {
               return (
-                <>
-                  <div className="p-6 flex items-start" key={index}>
+                  <div className="p-6 flex items-start" key={feature.title}>
                     <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-roseWhite bg-opacity-20 mb-4 flex-shrink-0">
                       <Image
                         src={feature.image}
@@ -49,7 +48,6 @@ export const FeatureSection = () => {
                       </p>
                     </div>
                   </div>
-                </>
               );
             })}
           </div>

@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function App({ Component, pageProps }) {
+	console.log("pageProps", pageProps);
 	return (
 		<>
 			<Head>

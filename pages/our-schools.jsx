@@ -51,9 +51,9 @@ export default function OurSchool() {
 						Our Schools
 					</h2>
 					<div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto gap-5'>
-						{[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((items, index) => {
+						{[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((items) => {
 							return (
-								<div key={index} className='p-3 rounded-lg shadow-lg my-5'>
+								<div key={items} className='p-3 rounded-lg shadow-lg my-5'>
 									<img
 										className='rounded-lg'
 										src='/images/banner-2.jpg'

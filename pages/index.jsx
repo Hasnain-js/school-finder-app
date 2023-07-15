@@ -58,10 +58,6 @@ export default function Home() {
 						<h2 className='text-gunMetal text-center text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight'>
 						What student’s say
 						</h2>
-						<p className='text-silverGrey text-2xl font-medium'>
-							Lorem Ipsum is simply dummy text of the printing.
-						</p>
-
 						<Swiper
 							slidesPerView={1}
 							spaceBetween={10}
