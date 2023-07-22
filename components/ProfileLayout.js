@@ -1,13 +1,13 @@
-import { useState } from "react";
+import Link from "next/link";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
-const Profile = () => {
-  const [profile, isProfile] = useState(true);
-  const [account, isAccount] = useState(false);
-  const [notification, isNotification] = useState(false);
+export default function ProfileLayout({ children }) {
   return (
     <>
+      <Navbar />
       <section className="">
-        <div className="w-full h-56 bg-[#F2E1CE]"></div>
+        <div className="w-full h-56 bg-frenchBlue"></div>
         <div className="flex items-start justify-start gap-5">
           <aside className="flex flex-col pl-10 max-w-sm w-full h-screen px-4 pb-8  bg-transparent">
             <div className="flex flex-col items-start gap-1 -mt-12">
@@ -19,9 +19,7 @@ const Profile = () => {
               <h3 className="text-gunMetal text-center text-xl font-semibold leading-tight">
                 Hayat ul islam
               </h3>
-              <h4 className="font-medium text-gray-800 dark:text-gray-200">
-                Secondary school
-              </h4>
+              <h4 className="font-medium text-gray-800">Secondary school</h4>
               <p className="text-sm font-medium text-LightGreyText">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Labore, error? Iste corporis eveniet nihil nam earum eligendi
@@ -66,26 +64,26 @@ const Profile = () => {
             {/* Tabs buttons */}
             <div className="flex items-end justify-between overflow-x-auto overflow-y-hidden border-b-2 border-b-romance whitespace-nowrap dark:border-gray-700">
               <div className="flex">
-                <button
-                  onClick={() => isProfile(!profile)}
-                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 sm:text-base dark:border-blue-400 dark:text-blue-300 whitespace-nowrap focus:outline-none"
+                <Link
+                  href="/profile/"
+                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center hover:font-semibold text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base focus:border-rustyRed focus:text-rustyRed"
                 >
                   Profile
-                </button>
+                </Link>
 
-                <button
-                  onClick={() => isAccount(!account)}
-                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400"
+                <Link
+                  href="/profile/account"
+                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center hover:font-semibold text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base focus:border-rustyRed focus:text-rustyRed"
                 >
                   Account
-                </button>
+                </Link>
 
-                <button
-                  onClick={() => isNotification(!notification)}
-                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400"
+                <Link
+                  href="/profile/notification"
+                  className="inline-flex items-center h-10 px-4 -mb-px text-sm text-center hover:font-semibold text-gray-700 bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base focus:border-rustyRed focus:text-rustyRed"
                 >
                   Notification
-                </button>
+                </Link>
               </div>
               <div className="flex px-4 pb-2">
                 <button className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
@@ -94,15 +92,11 @@ const Profile = () => {
               </div>
             </div>
             {/* Tabs body */}
-            <div className=""></div>
-            {profile && <div className="">profile</div>}
-            {account && <div className="">account</div>}
-            {notification && <div className="">notification</div>}
+            <div className="">{children}</div>
           </aside>
         </div>
       </section>
+      <Footer />
     </>
   );
-};
-
-export default Profile;
+}
