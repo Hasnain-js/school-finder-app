@@ -72,12 +72,12 @@ const Navbar = () => {
 							</div>
 							<div className='flex items-center gap-5'>
 								<Link
-									href={"/Signin"}
+									href={"/signin"}
 									className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
 									Login
 								</Link>
 								<Link
-									href={"/Signup"}
+									href={"/signup"}
 									className='text-base font-semibold border border-rustyRed bg-rustyRed px-8 py-2 rounded-full text-white transition-all duration-200 hover:bg-blueStone'>
 									Sigup
 								</Link>

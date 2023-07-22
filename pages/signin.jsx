@@ -914,4 +914,6 @@ const Signin = () => {
   );
 };
 
+Signin.getLayout = (page) => page; // No Layout for this page
+
 export default Signin;
