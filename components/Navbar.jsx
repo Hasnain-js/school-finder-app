@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import Signin from "@/pages/signin";
-import Signup from "@/pages/signup";
+import burgerMenuIcon from "/public/burger-menu.svg";
+import cancelIcon from "/public/x-mark.svg";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +53,12 @@ const Navbar = () => {
 						<span
 							className='text-3xl cursor-pointer mx-2 lg:hidden block'
 							onClick={() => setIsOpen(!isOpen)}>
-							<ion-icon name='menu'></ion-icon>
+							{!isOpen ? (
+								<Image src={burgerMenuIcon} width={24} height={24} alt="burger-menu" />
+
+							) : (
+							<Image src={cancelIcon} width={24} height={24} alt="cancelIcon" />
+							)}
 						</span>
 					</div>
 					<div className={className}>
