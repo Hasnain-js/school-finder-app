@@ -4,7 +4,7 @@ export const LearningExperienceSection = () => {
 	return (
 		<>
 			<section className='bg-almond'>
-				<div className='mx-auto max-w-7xl px-6 grid items-center lg:grid-cols-2 gap-20'>
+				<div className='mx-auto max-w-7xl lg:px-6 grid lg:items-center lg:grid-cols-2 gap-20 lg:grid justify-center pb-14'>
 					<div className='relative pt-14'>
 						<Image
 							className='w-full max-w-xs mx-auto'
@@ -14,8 +14,8 @@ export const LearningExperienceSection = () => {
 							height={550}
 						/>
 					</div>
-					<div className='space-y-4'>
-						<h2 className='text-3xl font-bold leading-tight text-gunMetal sm:text-4xl lg:text-5xl lg:leading-tight'>
+					<div className='space-y-4 justify-center pt-0'>
+						<h2 className='text-3xl font-bold leading-tight text-gunMetal sm:text-4xl lg:text-5xl lg:leading-tight '>
 							Premium <span className='text-rustyRed'>Learning</span> Experience
 						</h2>
 						<div className='flex flex-col items-stretch gap-5'>

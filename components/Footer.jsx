@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="text-white body-font bg-gunMetal pl-40 pr-40 ">
-        <div className="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <footer className="text-white body-font bg-gunMetal lg:pl-40 lg:pr-40 md:pl-6 md:pr-6">
+        <div className="container lg:px-5 pt-8 pb-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <Link
               href={"/"}
@@ -81,7 +81,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="text-center bg-gunMetal border-t-[0.5px] border-[#B7B7B7] py-4">
+      <div className="text-center text-sm bg-gunMetal border-t  border-[#94a3b8] py-4">
         <p className="text-white">BookStore All Right Reserved, 2023</p>
       </div>
     </>
