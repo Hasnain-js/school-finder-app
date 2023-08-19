@@ -5,7 +5,7 @@ export const HeroicSection = () => {
     return (
         <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
         <div className="mx-auto max-w-7xl lg:px-6 items-center">
-          <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2 justify-items-center">
+          <div className="'grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2 justify-items-center">
             <div className="flex flex-col items-start gap-9 md:text-center lg:text-left md:items-center">
               <h1 className="font-bold text-black lg:text-7xl text-6xl md:text-4xl">
                 Get
