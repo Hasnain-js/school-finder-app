@@ -6,12 +6,12 @@ import cancelIcon from "/public/x-mark.svg";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	let className =
+	let mobileNavDynamicClass =
 		"lg:relative transition-opacity lg:opacity-100 ease-linear duration-300 absolute left-0 lg:mt-0 mt-2 w-full lg:w-auto bg-almond bg-opacity-95 lg:bg-transparent ";
 	if (isOpen) {
-		className += "lg:opacity-100 opacity-100";
+		mobileNavDynamicClass += "lg:opacity-100 opacity-100 lg:block block";
 	} else {
-		className += "lg:opacity-100 opacity-0";
+		mobileNavDynamicClass += "lg:opacity-100 opacity-0 lg:block hidden";
 	}
 
 	const navLink = [
@@ -61,7 +61,7 @@ const Navbar = () => {
 							)}
 						</span>
 					</div>
-					<div className={className}>
+					<div className={mobileNavDynamicClass}>
 						<div className='flex lg:flex-row flex-col gap-x-14 gap-y-5 lg:py-0 py-4 lg:px-0 px-6'>
 							<div className='flex lg:items-center items-start lg:flex-row flex-col gap-5'>
 								{navLink.map((item, index) => {
