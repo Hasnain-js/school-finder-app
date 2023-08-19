@@ -4,8 +4,8 @@ export const LearningExperienceSection = () => {
 	return (
 		<>
 			<section className='bg-almond'>
-				<div className='mx-auto max-w-7xl lg:px-6 grid lg:items-center lg:grid-cols-2 gap-20 lg:grid justify-center pb-14'>
-					<div className='relative pt-14'>
+				<div className='mx-auto max-w-7xl lg:px-6 grid lg:items-center lg:grid-cols-2 gap-20 lg:grid p-6 justify-center pb-14'>
+					<div className='relative lg:pt-14 p-0'>
 						<Image
 							className='w-full max-w-xs mx-auto'
 							src={"/images/girl_books.png"}
