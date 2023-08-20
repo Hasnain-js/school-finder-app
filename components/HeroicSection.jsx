@@ -1,18 +1,15 @@
-import React from "react";
 
 export const HeroicSection = ({ children }) => {
-	return (
-		<>
-			{/*   HEROIC SETION */}
-			<div className='bg-roseWhite relative'>
-				Heroic Section
-				<img
-					src='/images/Heroic-Banner.png'
-					alt='banner'
-					className='object-cover object-center absolute top-0 bottom-0 left-0 right-0'
-				/>
-				{children}
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div
+        className="bg-almond relative lg:h-96 h-56 bg-contain bg-center"
+        style={{ backgroundImage: "url('/images/Heroic-Banner.png')" }}
+      >
+        <div className="flex items-center justify-center max-w-7xl px-6 mx-auto h-full">
+          {children}
+        </div>
+      </div>
+    </>
+  );
 };

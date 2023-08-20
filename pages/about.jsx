@@ -1,18 +1,16 @@
-import React from "react";
 import Image from "next/image";
+import { HeroicSection } from "@/components/HeroicSection";
 
 const About = () => {
   return (
     <>
       {/* about us section */}
       <section>
-        <div className="flex items-center">
-          <div className="flex items-center justify-center w-full lg:h-96 h-56 bg-almond">
-            <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-              About Us
-            </h1>
-          </div>
-        </div>
+        <HeroicSection>
+          <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
+            About Us
+          </h1>
+        </HeroicSection>
         <div className="mx-auto max-w-7xl p-6 lg:p-8">
           <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
             <div className="relative lg:mb-12">
@@ -53,11 +51,11 @@ const About = () => {
                 We make things easy for projects.
               </h2>
               <p className="text-xl leading-relaxed text-gray-900 mt-9">
-                At School Spot, we&apos;re dedicated to simplifying the school search
-                process for parents and students. Our user-friendly platform
-                provides up-to-date information on schools in your area, and
-                allows you to search based on a variety of criteria. We&apos;re
-                passionate about education and committed to providing
+                At School Spot, we&apos;re dedicated to simplifying the school
+                search process for parents and students. Our user-friendly
+                platform provides up-to-date information on schools in your
+                area, and allows you to search based on a variety of criteria.
+                We&apos;re passionate about education and committed to providing
                 exceptional customer service. Contact us if you have any
                 questions or feedback. Thanks for choosing School Spot!
               </p>
