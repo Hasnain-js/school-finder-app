@@ -5,8 +5,8 @@ export const HeroicSection = () => {
     return (
         <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
         <div className="mx-auto max-w-7xl lg:px-6 items-center md:justify-center text-center p-20 lg:p-10 justify-center">
-          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 justify-items-center ">
-            <div className="flex flex-col lg:gap-9 md:text-center lg:text-left items-center md:items-center ">
+          <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2 justify-items-center ">
+            <div className="flex flex-col lg:gap-9 md:text-center lg:text-left items-center md:items-center  ">
               <h1 className="font-bold text-black lg:text-7xl text-3xl md:text-4xl ">
                 Get
                 <span className="text-rustyRed "> Schools</span>
@@ -16,7 +16,7 @@ export const HeroicSection = () => {
                     Inside
                     {/* -top-2 mt-3 relative */}
                     <span className="w-fit relative -mt-1">
-                      <h2 className="text-rustyRed -rotate-[10deg] lg:text-7xl absolute top-1 left-3 md:text-4xl">
+                      <h2 className="text-rustyRed -rotate-[10deg] lg:text-7xl absolute top-1 left-3 md:text-3xl">
                         Scoop!
                       </h2>
                       <svg
@@ -89,9 +89,9 @@ export const HeroicSection = () => {
                   Find the perfect school for your child with just a few taps
                   using our intuitive school finder app.
                 </p>
-                <div className="relative m-auto lg:float-left md:m-auto max-w-md flex items-center justify-between shadow-2xl shadow-[#B1B1B1] w-full p-1 text-sm rounded-full bg-white">
-                  <div className="flex w-full items-center gap-3">
-                    <span className="w-fit h-fit ml-5">
+                <div className="relative m-auto lg:float-left md:m-auto max-w-md flex items-center justify-between shadow-2xl shadow-[#B1B1B1] min-w-screen lg:w-full p-1 text-sm rounded-full bg-white">
+                  <div className="flex lg:w-full items-center gap-3">
+                    <span className="w-fit h-fit lg:ml-5">
                       <svg
                         width="20"
                         height="20"

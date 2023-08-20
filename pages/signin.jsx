@@ -4,18 +4,18 @@ import React from "react";
 const Signin = () => {
   return (
     <>
-      <div className="h-full bg-gradient-to-tl  w-full py-16 px-4">
-        <div className="flex flex-col items-center justify-center">
-          <div className="bg-white relative shadow-lg rounded lg:w-1/3  md:w-1/2 w-full p-7 mt-14">
+      <div className="h-full bg-gradient-to-tl  w-full lg:py-16 lg:px-4 p-4 sm:2">
+        <div className="flex flex-col lg:items-center lg:justify-center justify-center items-center">
+          <div className="bg-white relative shadow-lg rounded lg:w-1/3  md:w-2/3 w-full md:p-7 lg:p-7 p-6 sm-2">
             <p
               tabindex="0"
-              className="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800"
+              className="focus:outline-none text-2xl font-extrabold text-center lg:text-left leading-6 text-gray-800"
             >
               Login to your account
             </p>
             <p
               tabindex="0"
-              className="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500"
+              className="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500 text-center lg:text-left"
             >
               Dont have account?{" "}
               <Link
@@ -97,12 +97,12 @@ const Signin = () => {
             </div>
 
             <div className="mt-8">
-              <button className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-rustyRed text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
+              <button className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-rustyRed text-sm font-semibold leading-none text-white focus:outline-none  border rounded hover:bg-rustyRed py-4 w-full">
                 Create my account
               </button>
             </div>
-            <span className="absolute -top-10 -right-9 z-[-1]">
-              <svg
+            <span className="absolute lg:-top-10 md:-top-10 -top-1 md:-right-9 lg:-right-9 -right-2 z-[-1]">
+              <svg className="md:w-20 md:h-36 lg:w-24 lg:h-36 w-14 h-10 "
                 width="100"
                 height="100"
                 viewBox="0 0 100 100"
@@ -118,7 +118,7 @@ const Signin = () => {
               </svg>
             </span>
             <span className="absolute -right-10 top-[90px] z-[-1]">
-              <svg
+              <svg className="md:w-20 md:h-16 md-20 h-14 hidden lg:block"
                 width="34"
                 height="134"
                 viewBox="0 0 34 134"
@@ -338,7 +338,7 @@ const Signin = () => {
               </svg>
             </span>
             <span className="absolute -left-7 -bottom-7 z-[-1]">
-              <svg
+              <svg className="md:w-20 md:h-20 lg:w-20 lg:h-36 w-20 h-14 hidden lg:block"
                 width="107"
                 height="134"
                 viewBox="0 0 107 134"
