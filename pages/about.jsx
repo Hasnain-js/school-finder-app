@@ -7,13 +7,13 @@ const About = () => {
       {/* about us section */}
       <section>
         <div className="flex items-center">
-          <div className="flex items-center justify-center w-full h-96 bg-[#F2E1CE]">
+          <div className="flex items-center justify-center w-full lg:h-96 h-56 bg-almond">
             <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
               About Us
             </h1>
           </div>
         </div>
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl p-6 lg:p-8">
           <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
             <div className="relative lg:mb-12">
               <Image

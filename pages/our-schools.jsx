@@ -5,20 +5,19 @@ export default function OurSchool() {
 		<div>
 			{/* Heroic Section */}
 			<section>
-				<div className='flex items-center w-full h-96 bg-[#F2E1CE]'>
+				<div className='flex items-center w-full h-96 bg-almond'>
 					<div className='container mx-auto flex flex-col items-center gap-12'>
 						<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
 							Our Schools
 						</h1>
-						{/* Search funcationality */}
-						<form className='relative max-w-3xl  flex items-center justify-between shadow-2xl shadow-[#B1B1B1] w-full p-2 text-sm text-gray-900 rounded-2xl bg-gray-50'>
+						{/* Search functionality */}
+						<form className='relative max-w-3xl flex items-center justify-between shadow-2xl shadow-silverGrey w-full p-2 text-sm text-black rounded-2xl bg-white'>
 							<div className='flex w-full items-center gap-3'>
 								<span className='w-fit h-fit ml-5 mr-12'>
 									<svg
-										width='35'
-										height='35'
 										viewBox='0 0 24 24'
 										fill='none'
+										className="lg:w-9 w-5 h-auto"
 										xmlns='http://www.w3.org/2000/svg'>
 										<path
 											d='M17.6125 15.4923C18.7935 13.8795 19.4999 11.8985 19.4999 9.75096C19.4999 4.375 15.1259 0.000976562 9.74993 0.000976562C4.37398 0.000976562 0 4.375 0 9.75096C0 15.1269 4.37403 19.5009 9.74998 19.5009C11.8975 19.5009 13.8787 18.7944 15.4915 17.6134L21.8789 24.0008L24 21.8798C24 21.8797 17.6125 15.4923 17.6125 15.4923ZM9.74998 16.5009C6.02781 16.5009 3.00001 13.4731 3.00001 9.75096C3.00001 6.02879 6.02781 3.00099 9.74998 3.00099C13.4721 3.00099 16.4999 6.02879 16.4999 9.75096C16.4999 13.4731 13.4721 16.5009 9.74998 16.5009Z'
@@ -30,7 +29,7 @@ export default function OurSchool() {
 								<input
 									type='search'
 									id='default-search'
-									className='bg-transparent text-2xl outline-none flex-grow'
+									className='bg-transparent lg:text-2xl text-lg outline-none flex-grow'
 									placeholder='Search your dream school here..'
 									required
 								/>

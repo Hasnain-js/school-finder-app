@@ -5,7 +5,7 @@ export default function contact() {
 	return (
 		<>
 			<div className='flex items-center'>
-				<div className='flex items-center justify-center w-full h-96 bg-[#F2E1CE]'>
+				<div className='flex items-center justify-center w-full h-96 bg-almond'>
 					<h1 className='text-4xl font-bold text-black sm:text-6xl lg:text-7xl'>
 						Contact Us
 					</h1>

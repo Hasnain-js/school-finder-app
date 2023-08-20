@@ -7,10 +7,10 @@ export default function ProfileLayout({ children }) {
   return (
     <>
       <Navbar />
-        <div className="w-full h-56 bg-frenchBlue"></div>
+        <div className="w-full lg:h-56 h-16 bg-frenchBlue"></div>
       <section className="container mx-auto pb-12 px-4">
         <div className="flex items-start justify-start gap-5">
-          <div className="flex flex-row items-end gap-1 -mt-12">
+          <div className="flex flex-row items-end gap-5 -mt-12">
             <Image
               className="object-cover w-24 h-24 rounded-full"
               src="/images/hasnain-saeed.jpeg"
@@ -18,7 +18,7 @@ export default function ProfileLayout({ children }) {
               width={96}
               height={96}
             />
-            <div>
+            <div className="text-start">
               <h3 className="text-gunMetal text-center text-xl font-semibold leading-tight">
                 Hayat ul islam
               </h3>
@@ -51,11 +51,7 @@ export default function ProfileLayout({ children }) {
                 Notification
               </Link>
             </div>
-            <div className="flex px-4 pb-2">
-              <button className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-                Primary
-              </button>
-            </div>
+            
           </div>
           {/* Tabs body */}
           <div className="">{children}</div>
