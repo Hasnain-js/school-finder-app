@@ -26,11 +26,11 @@ export const FeatureSection = () => {
   return (
     <>
       <section className="bg-gunMetal text-white body-font">
-        <div className="max-w-7xl px-6 py-16 mx-auto">
+        <div className="max-w-7xl lg:px-6 lg:py-16 mx-auto pt-14 pb-14 pl-8 pr-8">
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
             {featureSectionData.map((feature, index) => {
               return (
-                  <div className="p-6 flex items-start" key={feature.title}>
+                  <div className="lg:p-6 lg:text-left text-center lg:flex lg:flex-row items-start flex-col" key={feature.title}>
                     <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-roseWhite bg-opacity-20 mb-4 flex-shrink-0">
                       <Image
                         src={feature.image}
@@ -39,7 +39,7 @@ export const FeatureSection = () => {
                         alt="search"
                       />
                     </div>
-                    <div className="flex-grow pl-6 text-roseWhite">
+                    <div className="lg:flex-grow lg:pl-6 text-roseWhite flex-col">
                       <h2 className=" text-lg title-font font-medium mb-2">
                         {feature.title}
                       </h2>

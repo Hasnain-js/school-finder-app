@@ -4,12 +4,12 @@ import React from "react";
 export const HeroicSection = () => {
     return (
         <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
-        <div className="mx-auto max-w-7xl lg:px-6 items-center md:justify-center text-center p-10 justify-center">
+        <div className="mx-auto max-w-7xl lg:px-6 items-center md:justify-center text-center p-20 lg:p-10 justify-center">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 justify-items-center ">
-            <div className="flex flex-col lg:gap-9 md:text-center lg:text-left items-center md:items-center">
+            <div className="flex flex-col lg:gap-9 md:text-center lg:text-left items-center md:items-center ">
               <h1 className="font-bold text-black lg:text-7xl text-3xl md:text-4xl ">
                 Get
-                <span className="text-rustyRed"> Schools</span>
+                <span className="text-rustyRed "> Schools</span>
                 <div className="relative inline-flex">
                   <span className="absolute inset-x-0 bottom-0"></span>
                   <div className=" flex flex-wrap relative text-3xl font-bold left-3 lg:left-0 text-black lg:text-7xl md:text-4xl">
