@@ -8,9 +8,8 @@ export default function contact() {
           Contact Us
         </h1>
       </HeroicSection>
-
-      <section className="relative z-10 overflow-hidden bg-white py-20 px-52 lg:py-[120px]">
-        <div className="container mx-auto">
+      <section className="relative z-10 overflow-hidden bg-white py-20">
+        <div className="max-w-7xl px-6 mx-auto">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -18,9 +17,7 @@ export default function contact() {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+				Connect with us! Reach out through our contact page to ask questions, provide feedback, or just say hello. We{'\''}re here to listen and engage in meaningful conversations.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
@@ -38,7 +35,7 @@ export default function contact() {
                       Our Location
                     </h4>
                     <p className="text-body-color text-base">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      Karachi, Pakistan
                     </p>
                   </div>
                 </div>

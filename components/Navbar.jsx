@@ -3,9 +3,11 @@ import { useState } from "react";
 import Image from "next/image";
 import burgerMenuIcon from "/public/burger-menu.svg";
 import cancelIcon from "/public/x-mark.svg";
+import { signIn, useSession } from "next-auth/react"
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const session = useSession();
 	let mobileNavDynamicClass =
 		"lg:relative transition-opacity lg:opacity-100 ease-linear duration-300 absolute left-0 lg:mt-0 mt-2 w-full lg:w-auto bg-almond bg-opacity-95 lg:bg-transparent ";
 	if (isOpen) {
@@ -76,16 +78,20 @@ const Navbar = () => {
 								})}
 							</div>
 							<div className='flex items-center gap-5'>
-								<Link
-									href={"/signin"}
+								<button
+									onClick={() => signIn()}
 									className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
 									Login
-								</Link>
+								</button>
 								<Link
 									href={"/signup"}
 									className='text-base font-semibold border border-rustyRed bg-rustyRed px-8 py-2 rounded-full text-white transition-all duration-200 hover:bg-blueStone'>
 									Sigup
 								</Link>
+							</div>
+							<div>
+								<img src={session?.data?.user?.image} />
+								<span>{session?.data?.user?.name} </span>
 							</div>
 						</div>
 					</div>
