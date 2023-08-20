@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Review } from "@/components/Review";
-import { HeroicSection } from "@/components/home/HeroicSection";
+import { HeroicSection as HomeHeroicSection } from "@/components/home/HeroicSection";
 import { FeatureSection } from "@/components/home/FeatureSection";
 import { SchoolCardSection } from "@/components/home/SchoolCardSection";
 import { LearningExperienceSection } from "@/components/home/LearningExperienceSection";
@@ -42,7 +42,7 @@ export default function Home() {
 		<>
 			<main>
 				{/* Heroic Section */}
-				<HeroicSection />
+				<HomeHeroicSection />
 				{/* Heroic Section end */}
 				{/* lower banner section */}
 				<FeatureSection />

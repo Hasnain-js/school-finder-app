@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
 export const HeroicSection = () => {
     return (
         <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
