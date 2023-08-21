@@ -43,7 +43,7 @@ export default function OurSchool() {
 
               <button
                 type="submit"
-                className="text-white bg-rustyRed w-fit hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-2xl flex-shrink-0 lg:px-9 px-4 lg:py-4 py-2"
+                className="text-white bg-rustyRed w-fit hover:bg-rustyRed focus:ring-4 focus:outline-none  font-medium rounded-2xl flex-shrink-0 lg:px-9 px-4 lg:py-4 py-2"
               >
                 Search
               </button>

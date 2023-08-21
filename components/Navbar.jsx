@@ -77,22 +77,23 @@ const Navbar = () => {
 									);
 								})}
 							</div>
-							<div className='flex items-center gap-5'>
+							<div className='flex items-center gap-3'>
+							{
+							 (session?.data?.user) ? (
+								<>
+									<img className="rounded-full h-9" src={session?.data?.user?.image} />
+									<span className="font-bold text-sm">{session?.data?.user?.name} </span>
+								</>
+							 ) : (
 								<button
 									onClick={() => signIn()}
 									className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
 									Login
 								</button>
-								<Link
-									href={"/signup"}
-									className='text-base font-semibold border border-rustyRed bg-rustyRed px-8 py-2 rounded-full text-white transition-all duration-200 hover:bg-blueStone'>
-									Sigup
-								</Link>
+							 )
+							}
 							</div>
-							<div>
-								<img src={session?.data?.user?.image} />
-								<span>{session?.data?.user?.name} </span>
-							</div>
+
 						</div>
 					</div>
 				</div>

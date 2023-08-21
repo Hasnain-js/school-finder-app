@@ -115,7 +115,7 @@ export const HeroicSection = () => {
 
                   <button
                     type="submit"
-                    className="text-white bg-rustyRed hover:bg-blueStone focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-9 py-3"
+                    className="text-white bg-rustyRed hover:bg-rustyRed focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-9 py-3"
                   >
                     Search
                   </button>
