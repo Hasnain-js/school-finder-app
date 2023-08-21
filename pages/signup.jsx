@@ -4,11 +4,11 @@ const Signup = () => {
   return (
     <>
       <div className="bg-white relative">
-          <div className="flex flex-col items-center max-w-7xl mx-auto lg:flex-row">
-            <div className="bg-cover relative border border-black w-fit">
+          <div className="flex flex-col items-center max-w-xl md:mt-10  md:max-w-2xl md:p-10 lg:max-w-7xl mx-auto lg:flex-row">
+            <div className="bg-cover relative border border-black w-fit md:w-fit ">
               <img
                 src="https://images.pexels.com/photos/5212697/pexels-photo-5212697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                className="btn"
+                className="btn md:hidden lg:block hidden"
                 alt="signup"
               />
             </div>
@@ -66,7 +66,7 @@ const Signup = () => {
                   <div className="relative">
                     <button
                       className="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-rustyRed
-                  rounded-lg transition duration-200 hover:bg-indigo-600 ease"
+                  rounded-lg transition duration-200 hover:bg-rustyRed ease"
                     >
                       Submit
                     </button>
@@ -75,7 +75,7 @@ const Signup = () => {
               </div>
               <svg
                 viewBox="0 0 91 91"
-                className="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-yellow-300
+                className="absolute top-0 left-0 z-0 w-14 lg:w-32 md:h-20 md:-mt-10 md:-ml-10 lg:h-32 lg:-mt-12 lg:-ml-12 text-rustyRed
             fill-current"
               >
                 <g stroke="none" strokeWidth="1" fillRule="evenodd">
@@ -167,7 +167,7 @@ const Signup = () => {
               </svg>
               <svg
                 viewBox="0 0 91 91"
-                className="absolute bottom-0 right-0 z-0 w-32 h-32 -mb-12 -mr-12 text-indigo-500
+                className="absolute bottom-0 right-0 h-9 z-0 lg:w-32 lg:h-32 lg:-mb-12 lg:-mr-12 md:-mb-12 md:-mr-12 md:h-20  md:-ml-10 text-rustyRed
             fill-current"
               >
                 <g stroke="none" strokeWidth="1" fillRule="evenodd">
