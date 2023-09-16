@@ -3,7 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import burgerMenuIcon from "/public/burger-menu.svg";
 import cancelIcon from "/public/x-mark.svg";
-import { signIn, useSession } from "next-auth/react"
+import { useSession, signOut } from "next-auth/react"
+import DropDown from "./DropDown";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
 								<Image src={burgerMenuIcon} width={24} height={24} alt="burger-menu" />
 
 							) : (
-							<Image src={cancelIcon} width={24} height={24} alt="cancelIcon" />
+								<Image src={cancelIcon} width={24} height={24} alt="cancelIcon" />
 							)}
 						</span>
 					</div>
@@ -78,20 +79,28 @@ const Navbar = () => {
 								})}
 							</div>
 							<div className='flex items-center gap-3'>
-							{
-							 (session?.data?.user) ? (
-								<>
-									<img className="rounded-full h-9" src={session?.data?.user?.image} />
-									<span className="font-bold text-sm">{session?.data?.user?.name} </span>
-								</>
-							 ) : (
-								<button
-									onClick={() => signIn()}
-									className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
-									Login
-								</button>
-							 )
-							}
+								{
+									(session?.data?.user) ? (
+										<DropDown>
+											<div class="relative">
+												<img class="object-cover w-12 h-12 rounded-full" src={session?.data?.user?.image} alt="user-image" />
+												<span class="absolute bottom-0 w-2 h-2 rounded-full bg-green-500 right-1 ring-1 ring-white"></span>
+											</div>
+											<>
+												<span className="block px-4 py-3 text-sm font-bold text-gray-600 capitalize">{session?.data?.user?.name}	</span>
+												<button className="block px-4 py-3 text-sm text-gray-600 capitalize" onClick={() => signOut()}>
+													logout
+												</button>
+											</>
+										</DropDown>
+									) : (
+										<Link
+											href={'/signin'}
+											className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
+											Login
+										</Link>
+									)
+								}
 							</div>
 
 						</div>

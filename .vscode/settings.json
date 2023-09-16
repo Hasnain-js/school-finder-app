@@ -30,6 +30,8 @@
       "yarn.lock": true,
       "package-lock.json": true,
       ".nvmrc": true
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
     }
   }
-  

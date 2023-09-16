@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import { signIn } from "next-auth/react";
 
 const Signin = () => {
   return (
     <>
-      <div className="h-full bg-gradient-to-tl  w-full lg:py-16 lg:px-4 p-4 sm:2">
-        <div className="flex flex-col lg:items-center lg:justify-center justify-center items-center">
-          <div className="bg-white relative shadow-lg rounded lg:w-1/3  md:w-2/3 w-full md:p-7 lg:p-7 p-6 sm-2">
+        <div className="flex flex-col items-center justify-center bg-almond min-h-screen">
+          <div className="bg-white relative shadow-lg lg:w-1/3  md:w-2/3 w-full md:p-24 p-12 sm-2" style={{ borderRadius: '25% 75% 17% 83% / 81% 12% 88% 19%'}}>
             <p
               tabindex="0"
               className="focus:outline-none text-2xl font-extrabold text-center lg:text-left leading-6 text-gray-800"
@@ -14,53 +14,27 @@ const Signin = () => {
               Login to your account
             </p>
             <p
-              tabindex="0"
-              className="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500 text-center lg:text-left"
+              className="text-sm mt-4 font-light leading-5 text-gray-500 text-center"
             >
-              Dont have account?{" "}
-              <Link
-                href="/signup"
-                className="hover:text-gray-500 focus:text-gray-500 focus:outline-none focus:underline hover:underline text-sm font-medium leading-none  text-gray-800 cursor-pointer"
-              >
-                {" "}
-                Sign up here
-              </Link>
+              Unlocking Possibilities, <br /> One Login at a Time.
             </p>
-            <button className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-10">
+            <button onClick={() => signIn()} className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-10">
               <img
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg2.svg"
                 alt="google"
               />
-              <p className="text-base font-medium ml-4 text-gray-700">
+              <p className="text-base  whitespace-nowrap font-medium ml-4 text-gray-700">
                 Continue with Google
               </p>
             </button>
-            <button className="focus:outline-none  focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg3.svg"
-                alt="github"
-              />
-              <p className="text-base font-medium ml-4 text-gray-700">
-                Continue with Github
-              </p>
-            </button>
-            <button className="focus:outline-none  focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg4.svg"
-                alt="twitter"
-              />
-              <p className="text-base font-medium ml-4 text-gray-700">
-                Continue with Twitter
-              </p>
-            </button>
-            <div className="w-full flex items-center justify-between py-5">
+            {/* <div className="w-full flex items-center justify-between py-5">
               <hr className="w-full bg-gray-400" />
               <p className="text-base font-medium leading-4 px-2.5 text-gray-400">
                 OR
               </p>
               <hr className="w-full bg-gray-400  " />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <label
                 id="email"
                 className="text-sm font-medium leading-none text-gray-800"
@@ -100,7 +74,7 @@ const Signin = () => {
               <button className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-rustyRed text-sm font-semibold leading-none text-white focus:outline-none  border rounded hover:bg-rustyRed py-4 w-full">
                 Create my account
               </button>
-            </div>
+            </div> */}
             <span className="absolute lg:-top-10 md:-top-10 -top-1 md:-right-9 lg:-right-9 -right-2 z-[-1]">
               <svg className="md:w-20 md:h-36 lg:w-24 lg:h-36 w-14 h-10 "
                 width="100"
@@ -909,7 +883,6 @@ const Signin = () => {
             </span>
           </div>
         </div>
-      </div>
     </>
   );
 };
