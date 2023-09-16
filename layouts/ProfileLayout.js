@@ -1,14 +1,14 @@
 import Link from "next/link";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
 import Image from "next/image";
 import { SessionProvider } from "next-auth/react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function ProfileLayout({ children }) {
   return (
     <SessionProvider>
       <Navbar />
-        <div
+      <div
         className="bg-almond relative lg:h-56 h-16 bg-contain bg-center"
         style={{ backgroundImage: "url('/images/Heroic-Banner.png')" }}
       ></div>
@@ -55,7 +55,6 @@ export default function ProfileLayout({ children }) {
                 Notification
               </Link>
             </div>
-
           </div>
           {/* Tabs body */}
           <div className="">{children}</div>

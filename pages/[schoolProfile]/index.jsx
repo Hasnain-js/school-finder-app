@@ -1,4 +1,4 @@
-import ProfileLayout from "@/components/ProfileLayout";
+import ProfileLayout from "@/layouts/ProfileLayout";
 
 function SchoolProfile() {
   return (

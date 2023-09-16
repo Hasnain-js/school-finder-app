@@ -1,9 +1,9 @@
-import ProfileLayout from "@/components/ProfileLayout";
+import ProfileLayout from "@/layouts/ProfileLayout";
 
 function SchoolNotification() {
   return (
     <>
-       <h1>School Notification</h1>
+      <h1>School Notification</h1>
     </>
   );
 }

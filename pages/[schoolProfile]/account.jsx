@@ -1,4 +1,4 @@
-import ProfileLayout from "@/components/ProfileLayout";
+import ProfileLayout from "@/layouts/ProfileLayout";
 
 function SchoolAccount() {
   return (
@@ -9,6 +9,6 @@ function SchoolAccount() {
 }
 
 SchoolAccount.getLayout = (page) => {
-  return <ProfileLayout>{page}</ProfileLayout>;
+  return <ProfileLayout>{page}</ProfileLayout>
 };
 export default SchoolAccount;
