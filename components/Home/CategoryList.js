@@ -11,8 +11,7 @@ function CategoryList({onCategoryChange}) {
         </h2>
         <div className='grid
         grid-cols-2
-        md:grid-cols-2
-        lg:grid-cols-3'>
+        '>
             {categoryList.map((item,index)=>(
                 <div key={index} className={`flex flex-col
                 justify-center items-center bg-gray-100
@@ -28,7 +27,8 @@ function CategoryList({onCategoryChange}) {
                     <Image src={item.icon}
                     alt={item.name}
                     width={40}
-                    height={40}
+                    height={60}
+                    className='h-24 w-auto'
                     />
                     {item.name}
                 </div>

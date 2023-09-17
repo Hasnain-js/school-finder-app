@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer className="text-white body-font bg-gunMetal lg:pl-40 lg:pr-40 md:pl-6 md:pr-6">
         <div className="container lg:px-5 pt-8 pb-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <div className="w-1/3 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <Link
               href={"/"}
               className="flex title-font font-medium items-center md:justify-start justify-center "
@@ -21,27 +21,39 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-2 text-sm text-[#949494]">
-              Find the perfect schools for your children effortlessly with the
-              School Finder App. Search by location, type, fees, and
-              performance, and access detailed information to make informed
-              decisions. Discover public, private, and specialized schools all
-              in one user-friendly platform.
+              School Finder is a comprehensive platform dedicated to helping
+              students, parents, and educators find the perfect educational
+              institutions worldwide. Our mission is to empower individuals with
+              accurate information, valuable resources, and user-friendly tools
+              to make informed decisions about their educational journey.
             </p>
           </div>
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium  tracking-widest text-sm mb-3">
                 QUICK LINKS
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link href={"/"} className="text-[#949494] hover:text-white">Home</Link>
+                  <Link href={"/"} className="text-[#949494] hover:text-white">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a href={"/about"} className="text-[#949494] hover:text-white">About</a>
+                  <a
+                    href={"/about"}
+                    className="text-[#949494] hover:text-white"
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href={"/our-schools"} className="text-[#949494] hover:text-white">Find your school</a>
+                  <a
+                    href={"/our-schools"}
+                    className="text-[#949494] hover:text-white"
+                  >
+                    Find your school
+                  </a>
                 </li>
               </nav>
             </div>
@@ -51,7 +63,9 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link href={"/"} className="text-[#949494] hover:text-white ">FAQs</Link>
+                  <Link href={"/"} className="text-[#949494] hover:text-white ">
+                    FAQs
+                  </Link>
                 </li>
                 <li>
                   <Link href={"/"} className=" text-[#949494] hover:text-white">
@@ -59,7 +73,9 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"} className=" text-[#949494] hover:text-white">Help center</Link>
+                  <Link href={"/"} className=" text-[#949494] hover:text-white">
+                    Help center
+                  </Link>
                 </li>
               </nav>
             </div>
@@ -69,10 +85,18 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href="tel:03122023432" className="text-[#949494] hover:text-white">03122023432</a>
+                  <a
+                    href="tel:03122023432"
+                    className="text-[#949494] hover:text-white"
+                  >
+                    03122023432
+                  </a>
                 </li>
                 <li>
-                  <a href="mailto:ihasnain4@gmail.com" className="text-[#949494] hover:text-white">
+                  <a
+                    href="mailto:ihasnain4@gmail.com"
+                    className="text-[#949494] hover:text-white"
+                  >
                     ihasnain4@gmail.com
                   </a>
                 </li>

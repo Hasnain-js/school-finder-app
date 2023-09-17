@@ -8,8 +8,10 @@ function RangeSelect({onRadiusChange}) {
         className='font-bold '
         >Select Radius (In Meter)</h2>
         <input type='range'
-        className='w-full h-2 bg-gray-200
+        className='w-full h-2 bg-almond
         rounded-lg appearance-none
+        accent-rustyRed
+
         cursor-pointer '
         min="500"
         max="5000"

@@ -2,7 +2,7 @@ import Image from "next/image";
 export const HeroicSection = () => {
     return (
         <div className='relative bg-almond overflow-hidden bg-contain bg-center' style={{backgroundImage: "url('/images/Heroic-Banner.png')"}}>
-        <div className="mx-auto max-w-7xl lg:px-6 items-center md:justify-center text-center p-20 lg:p-10 justify-center">
+        <div className="mx-auto max-w-7xl lg:px-6 items-center md:justify-center text-center p-20 lg:p-0 justify-center">
           <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2 justify-items-center ">
             <div className="flex flex-col lg:gap-9 md:text-center lg:text-left items-center md:items-center  ">
               <h1 className="font-bold text-black lg:text-7xl text-3xl md:text-4xl ">
@@ -87,39 +87,6 @@ export const HeroicSection = () => {
                   Find the perfect school for your child with just a few taps
                   using our intuitive school finder app.
                 </p>
-                <div className="relative m-auto lg:float-left md:m-auto max-w-md flex items-center justify-between shadow-2xl shadow-[#B1B1B1] min-w-screen lg:w-full p-1 text-sm rounded-full bg-white">
-                  <div className="flex lg:w-full items-center gap-3">
-                    <span className="w-fit h-fit lg:ml-5">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17.6125 15.4923C18.7935 13.8795 19.4999 11.8985 19.4999 9.75096C19.4999 4.375 15.1259 0.000976562 9.74993 0.000976562C4.37398 0.000976562 0 4.375 0 9.75096C0 15.1269 4.37403 19.5009 9.74998 19.5009C11.8975 19.5009 13.8787 18.7944 15.4915 17.6134L21.8789 24.0008L24 21.8798C24 21.8797 17.6125 15.4923 17.6125 15.4923ZM9.74998 16.5009C6.02781 16.5009 3.00001 13.4731 3.00001 9.75096C3.00001 6.02879 6.02781 3.00099 9.74998 3.00099C13.4721 3.00099 16.4999 6.02879 16.4999 9.75096C16.4999 13.4731 13.4721 16.5009 9.74998 16.5009Z"
-                          fill="#949494"
-                        />
-                      </svg>
-                    </span>
-
-                    <input
-                      type="search"
-                      id="default-search"
-                      className="bg-transparent outline-none flex-grow"
-                      placeholder="Search your dream school here.."
-                      required
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="text-white bg-rustyRed hover:bg-rustyRed focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-9 py-3"
-                  >
-                    Search
-                  </button>
-                </div>
               </section>
             </div>
             <Image

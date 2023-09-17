@@ -1,36 +1,16 @@
 const CategoryListData=[
     {
         id:1,
-        name:'Primary',
+        name:'Primary schools',
         value:'primary schools',
-        icon:'/masala-dosa.png'
+        icon:'/primary.png'
     },
     {
         id:2,
-        name:'Secondary',
+        name:'Secondary schools',
         value:'secondary schools',
-        icon:'/taco.png'
+        icon:'/higher.png'
     },
-    {
-        id:3,
-        name:'college',
-        value:'college',
-        icon:'/ramen.png'
-    },
-    {
-        id:4,
-        name:'Higher',
-        value:'university',
-        icon:'/pizza.png'
-    },
-    {
-        id:4,
-        name:'Madrasa',
-        value:'madrasa',
-        icon:'/bento.png'
-    },
-
-
 ]
 
 const ratingList=[

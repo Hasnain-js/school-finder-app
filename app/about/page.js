@@ -36,8 +36,7 @@ const About = () => {
                     <div className="flex items-start">
                       <blockquote className="ml-5">
                         <p className="text-sm font-medium text-white sm:text-lg">
-                          “You made it so simple. My new site is so much faster
-                          and easier to work with than my old site.”
+                          “Our goal is to be your trusted companion in the search for educational excellence.”
                         </p>
                       </blockquote>
                     </div>
@@ -51,13 +50,10 @@ const About = () => {
                 We make things easy for projects.
               </h2>
               <p className="text-xl leading-relaxed text-gray-900 mt-9">
-                At School Spot, we&apos;re dedicated to simplifying the school
-                search process for parents and students. Our user-friendly
-                platform provides up-to-date information on schools in your
-                area, and allows you to search based on a variety of criteria.
-                We&apos;re passionate about education and committed to providing
-                exceptional customer service. Contact us if you have any
-                questions or feedback. Thanks for choosing School Spot!
+                Welcome to School Finder Application, your reliable source for finding and exploring educational institutions around to your nearest areas in karachi. We understand the importance of education in shaping the future of individuals, and our mission is to empower students, parents, and educators with comprehensive information and resources to make informed decisions about schools.
+              </p>
+              <p className="text-xl leading-relaxed text-gray-900 mt-9">
+                At School Finder, we believe that every student deserves access to quality education. Whether you're searching for a primary school, high school, college, or specialized educational program, our platform is designed to assist you in finding the right fit for your educational needs and goals.
               </p>
             </div>
           </div>

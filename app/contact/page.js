@@ -17,7 +17,7 @@ export default function contact() {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed">
-				Connect with us! Reach out through our contact page to ask questions, provide feedback, or just say hello. We{'\''}re here to listen and engage in meaningful conversations.
+                  We value your feedback and are here to assist you with any inquiries or concerns you may have. Please feel free to reach out to us using the contact information provided below. Our dedicated team is ready to assist you and provide the support you need.
                 </p>
                 <div className="mb-8 flex-col flex lg:flex-row md:flex-col w-full lg:max-w-[370px]">
                   <div className="bg-primary text-primary lg:mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">

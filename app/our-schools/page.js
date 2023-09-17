@@ -1,22 +1,22 @@
 "use client"
 import GlobalApi from '@/Shared/GlobalApi';
 import { HeroicSection } from '@/components/HeroicSection';
-import BusinessList from '@/components/Home/BusinessList';
+// import BusinessList from '@/components/Home/BusinessList';
 import CategoryList from '@/components/Home/CategoryList';
-import GoogleMapView from '@/components/Home/GoogleMapView';
+// import GoogleMapView from '@/components/Home/GoogleMapView';
 import RangeSelect from '@/components/Home/RangeSelect';
 import SelectRating from '@/components/Home/SelectRating';
 import { SchoolCard } from '@/components/SchoolCard';
 import SkeltonLoading from '@/components/SkeltonLoading';
 import { UserLocationContext } from '@/context/UserLocationContext';
 import { signOut, useSession } from 'next-auth/react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import { useContext, useEffect, useState } from 'react'
 
 export default function Home() {
   const { data: session } = useSession();
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState('schools');
   const [radius, setRadius] = useState(2500);
   const [businessList, setBusinessList] = useState([])
   const [businessListOrg, setBusinessListOrg] = useState([])
@@ -104,16 +104,18 @@ export default function Home() {
           </div>
         </div>
       </HeroicSection>
-      <section className='bg-white'>
-        <div className="py-24 px-6 flex items-start gap-5">
-          <div className='max-w-md min-w-max w-full h-full'>
-            <div className='p-3 sticky top-0 w-full'>
-              <CategoryList onCategoryChange={(value) => setCategory(value)} />
-              <RangeSelect onRadiusChange={(value) => setRadius(value)} />
-              <SelectRating onRatingChange={(value) => onRatingChange(value)} />
+      <section className='bg-roseWhite'>
+        <div className="py-24 px-6 flex lg:flex-row flex-col items-stretch gap-6">
+          <div className='lg:max-w-xs min-w-max w-full block'>
+            <div className='lg:sticky relative top-28'>
+              <div className='p-5 relative rounded-lg bg-white'>
+                <CategoryList onCategoryChange={(value) => setCategory(value)} />
+                <RangeSelect onRadiusChange={(value) => setRadius(value)} />
+                <SelectRating onRatingChange={(value) => onRatingChange(value)} />
+              </div>
             </div>
           </div>
-          <div className='grid grid-cols-3 gap-5'>
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
             {console.log('businessList', businessList)}
             {businessList.map((item, index) => {
               return (
@@ -123,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className='grid
+      {/* <div className='grid
     grid-cols-1
     md:grid-cols-4 relative'>
         <div className='p-3'>
@@ -147,7 +149,7 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
+      </div> */}
     </>
   )
 }

@@ -5,21 +5,21 @@ import enrollment from "@/public/images/home/enrollment.svg";
 export const FeatureSection = () => {
   const featureSectionData = [
     {
-      title: "Search and Discovery",
+      title: "Discover Your Educational Path:",
       description:
-        "Find Schools that Match Your RequirementsUse our search feature to find schools that match your location, grade level, and academic program requirements. You can easily filter and sort search results to find the schools that are the best fit for you.",
+        "Finding the right school is a critical decision that can shape your educational journey and future success. At School Finder, we understand the importance of making informed choices about education. Our platform is designed to empower students, parents, and educators by providing comprehensive information and resources to simplify the school search process.",
       image: searchMagnifier,
     },
     {
-      title: "Exploration and Evaluation",
+      title: "Personalized Search Experience:",
       description:
-        "Explore Schools and Evaluate ThemOnce you have a list of potential schools, explore their profiles and evaluate them based on their academic offerings, extracurricular activities, and location. We provide detailed information about each school to help you make an informed decision. You can also compare different schools side by side to find the best one for you.",
+        "We believe that every student is unique, and finding the right school involves considering individual needs and preferences. Our advanced search filters allow you to customize your search based on location, curriculum, language of instruction, extracurricular activities, and more. ",
       image: exploration,
     },
     {
-      title: "Application and Enrollment",
+      title: "Ratings and Reviews:",
       description:
-        "Apply and Enroll in Your Chosen SchoolAfter you have evaluated different schools and made a decision, you can apply to the school directly through our website or contact the school to learn more. We provide information on how to apply and enroll in the chosen school, as well as any additional resources or support that may be helpful during the application process. Were here to help you every step of the way!",
+        "Hearing from others who have experienced a particular school can be invaluable in making your decision. School Finder provides a platform for students, parents, to share their insights and reviews about schools. Read authentic ratings and reviews to gain a deeper understanding of a school's culture, teaching quality, and overall student satisfaction.",
       image: enrollment,
     },
   ];
@@ -30,24 +30,24 @@ export const FeatureSection = () => {
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
             {featureSectionData.map((feature, index) => {
               return (
-                  <div className="lg:p-6 lg:text-left text-center lg:flex lg:flex-row items-start flex-col" key={feature.title}>
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-roseWhite bg-opacity-20 mb-4 flex-shrink-0">
-                      <Image
-                        src={feature.image}
-                        width={32}
-                        height={32}
-                        alt="search"
-                      />
-                    </div>
-                    <div className="lg:flex-grow lg:pl-6 text-roseWhite flex-col">
-                      <h2 className=" text-lg title-font font-medium mb-2">
-                        {feature.title}
-                      </h2>
-                      <p className="leading-relaxed text-sm">
-                        {feature.description}
-                      </p>
-                    </div>
+                <div className="lg:p-6 lg:text-left text-center lg:flex lg:flex-row items-start flex-col" key={feature.title}>
+                  <div className="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-roseWhite bg-opacity-20 mb-4 flex-shrink-0">
+                    <Image
+                      src={feature.image}
+                      width={32}
+                      height={32}
+                      alt="search"
+                    />
                   </div>
+                  <div className="lg:flex-grow lg:pl-6 text-roseWhite flex-col">
+                    <h2 className=" text-lg title-font font-medium mb-2">
+                      {feature.title}
+                    </h2>
+                    <p className="leading-relaxed text-sm">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
               );
             })}
           </div>

@@ -58,11 +58,11 @@ export const SchoolCard = ({ business }) => {
 
   return (
     <>
-      <div className="p-3 rounded-lg shadow-md hover:shadow-lg my-5 w-full">
-        <div className="h-56 w-full relative">
+      <div className="p-3 pb-12 rounded-lg bg-white shadow-md hover:shadow-lg mb-4 relative w-full">
+        <div className="h-36 w-full relative">
           <Image
             fill
-            className="rounded-lg object-cover object-center"
+            className="rounded-lg h-12 object-cover object-center"
             src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photo_ref}&key=${GOOGLE_API_KEY}`}
             alt={business.name}
           />
@@ -178,14 +178,14 @@ export const SchoolCard = ({ business }) => {
             </svg>
             <p className="pl-2 text-LightGreyText text-[13px]	">250 Sales</p> */}
           </div>
-          <div className="flex items-center justify-center relative mt-7">
-            <button
-              onClick={() => onDirectionClick()}
-              className="pt-2 pb-2 pl-10 pr-10 bg-rustyRed text-white rounded-full absolute -bottom-8"
-            >
-              Get Direction
-            </button>
-          </div>
+        </div>
+        <div className="flex items-center justify-center absolute bottom-4 inset-x-0">
+          <button
+            onClick={() => onDirectionClick()}
+            className="pt-2 pb-2 pl-10 pr-10 bg-rustyRed text-white rounded-full absolute -bottom-8"
+          >
+            Get Direction
+          </button>
         </div>
       </div>
     </>
