@@ -12,28 +12,36 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Home() {
 	const ReviewData = [
 		{
-			userReviews: "Teachings of the great explore of truth, the master-builder of human happiness.no one rejects,dislikes, or avoids pleasure itself, pleasure itself",
-			userName: "Hasnain Saeed",
-			userTitle: "Web Developer",
-			userImage: "/images/hasnain-saeed.jpeg",
+			userReviews: "This app made finding the right school for my child a breeze! The detailed information, user reviews, and personalized recommendations were incredibly helpful. Highly recommended!",
+			userName: "Sarah",
 		},
 		{
-			userReviews: "Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots",
-			userName: "Ramsha Naseer",
-			userTitle: "Web Developer",
-			userImage: "/images/ramsha.jpg",
+			userReviews: "The school finder app saved me so much time. Instead of visiting multiple schools, I narrowed down my options easily and made an informed choice. It's a game-changer for parents!",
+			userName: "Emily",
 		},
 		{
-			userReviews: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-			userName: "Yawar ali",
-			userTitle: "Web Developer",
-			userImage: "/images/yawar.jpg",
+			userReviews: "I love how I can compare schools side by side and read reviews from other parents. It gave me peace of mind knowing that I made the right decision for my daughter's education.",
+			userName: "Michael",
 		},
 		{
-			userReviews: "Teachings of the great explore of truth, the master-builder of human happiness.no one rejects,dislikes, or avoids pleasure itself, pleasure itself",
-			userName: "Hasnain Saeed",
-			userTitle: "Web Developer",
-			userImage: "/images/hasnain-saeed.jpeg",
+			userReviews: "As a teacher, I find this app incredibly useful for recommending schools to my students' parents. It's a valuable resource for both educators and families.",
+			userName: "Lisa",
+		},
+		{
+			userReviews: "This app is a must-have for anyone looking for the best education options. The alerts for school events and deadlines are a lifesaver!",
+			userName: "David",
+		},
+		{
+			userReviews: "The school finder app helped me discover a hidden gem of a school that I would have otherwise missed. My child is thriving there, and I'm grateful for this app!",
+			userName: "Rachel",
+		},
+		{
+			userReviews: "I can't imagine navigating the school search without this app. It's user-friendly, informative, and made finding a school for my son a joyful experience.",
+			userName: "Mark",
+		},
+		{
+			userReviews: "This app is a game-changer for parents like me who value their children's education. It's like having a personal assistant for school hunting!",
+			userName: "Amanda",
 		},
 
 	];
@@ -87,7 +95,7 @@ export default function Home() {
 											userReviews={review.userReviews}
 											userName={review.userName}
 											userTitle={review.userTitle}
-											userImage={review.userImage}
+											userImage={'/images/avatar.jpeg'}
 										/>
 									</SwiperSlide>
 								);

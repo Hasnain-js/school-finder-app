@@ -10,7 +10,6 @@ export const Review = ({ userReviews, userName, userTitle, userImage = '/images/
 					<Image src={userImage} className="rounded-full object-contain object-center" width={45} height={45} alt="userImage" />
 					<span>
 						<h5 className="text-gunMetal text-lg font-medium">{userName}</h5>
-						<p className="text-LightGreyText text-sm">{userTitle}</p>
 					</span>
 				</div>
           </div>
