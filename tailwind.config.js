@@ -1,16 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: [
-		"./app/**/*.{js,ts,jsx,tsx}",
-		"./pages/**/*.{js,ts,jsx,tsx}",
-		"./components/**/*.{js,ts,jsx,tsx}",
-
-		// Or if using `src` directory:
-		"./src/**/*.{js,ts,jsx,tsx}",
-	],
-	theme: {
-		extend: {
-			colors: {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors: {
 				"copper-red": "#CE4A1D",
 				"copper-red-lighter": "#de5021",
 				rustyRed: "#F05F2D",
@@ -27,7 +29,9 @@ module.exports = {
 				transparent: "transparent",
 				romance: "#E6E5E4",
 			},
-		},
-	},
-	plugins: [],
-};
+    },
+  },
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
+}

@@ -82,9 +82,9 @@ const Navbar = () => {
 								{
 									(session?.data?.user) ? (
 										<DropDown>
-											<div class="relative">
-												<img class="object-cover w-12 h-12 rounded-full" src={session?.data?.user?.image} alt="user-image" />
-												<span class="absolute bottom-0 w-2 h-2 rounded-full bg-green-500 right-1 ring-1 ring-white"></span>
+											<div className="relative">
+												<img className="object-cover w-12 h-12 rounded-full" src={session?.data?.user?.image} alt="user-image" />
+												<span className="absolute bottom-0 w-2 h-2 rounded-full bg-green-500 right-1 ring-1 ring-white"></span>
 											</div>
 											<>
 												<span className="block px-4 py-3 text-sm font-bold text-gray-600 capitalize">{session?.data?.user?.name}	</span>
