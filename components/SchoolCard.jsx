@@ -15,6 +15,7 @@ export const SchoolCard = ({ business }) => {
       userLocation.lat,
       userLocation.lng
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
