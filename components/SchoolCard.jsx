@@ -15,7 +15,7 @@ export const SchoolCard = ({ business }) => {
       userLocation.lat,
       userLocation.lng
     );
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
@@ -70,13 +70,13 @@ export const SchoolCard = ({ business }) => {
         </div>
         <div>
           <div className="flex items-center pt-3">
-            <p className="grow text-LightGreyText text-base	">
-              {business.rating}
+            <p className="grow text-LightGreyText text-xs">
+              Total ratings: {business.user_ratings_total}
             </p>
             {/* Ratting */}
 
             <div className="flex items-center justify-between space-x-[2px] ">
-              <span className="mr-2 text-sm">{business.rating}</span>
+              {/* <span className="mr-2 text-sm">{business.rating}</span> */}
               {[1, 2, 3, 4, 5].map((values) => {
                 return values < Math.ceil(business.rating) ? (
                   <svg
@@ -94,6 +94,7 @@ export const SchoolCard = ({ business }) => {
                   </svg>
                 ) : (
                   <svg
+                    key={values}
                     width="14"
                     height="14"
                     viewBox="0 0 16 16"
@@ -114,7 +115,7 @@ export const SchoolCard = ({ business }) => {
             <h5 className="text-black font-semibold leading-8 text-lg">
               {business.name}
             </h5>
-            <p className="text-sm text-LightGreyText font-light">
+            <p className="text-sm text-silverGrey font-light">
               {business.formatted_address}
             </p>
           </div>
@@ -144,7 +145,9 @@ export const SchoolCard = ({ business }) => {
                 </clipPath>
               </defs>
             </svg>
-            <p className="pl-2  text-LightGreyText text-[13px]	">22hr 30min</p>
+            <p className="pl-2  text-red-800 text-xs font-bold">
+              {business?.opening_hours?.open_now ? "Open now" : "Close now"}
+            </p>
             {/* <svg
               className="ml-2"
               width="20"

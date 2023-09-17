@@ -107,7 +107,7 @@ export default function Home() {
       <section className='bg-roseWhite'>
         <div className="py-24 px-6 flex lg:flex-row flex-col items-stretch gap-6">
           <div className='lg:max-w-xs min-w-max w-full block'>
-            <div className='lg:sticky relative top-28'>
+            <div className='lg:sticky relative lg:top-28'>
               <div className='p-5 relative rounded-lg bg-white'>
                 <CategoryList onCategoryChange={(value) => setCategory(value)} />
                 <RangeSelect onRadiusChange={(value) => setRadius(value)} />
