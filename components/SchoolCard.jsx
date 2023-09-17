@@ -1,7 +1,61 @@
-import React from "react";
 import Image from "next/image";
+import { UserLocationContext } from "@/context/UserLocationContext";
+import React, { useContext, useEffect, useState } from "react";
+export const SchoolCard = ({ business }) => {
+  const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
+  const photo_ref = business?.photos
+    ? business?.photos[0]?.photo_reference
+    : "";
+  const { userLocation, setUserLocation } = useContext(UserLocationContext);
+  const [distance, setDistance] = useState();
+  useEffect(() => {
+    calculateDistance(
+      business.geometry.location.lat,
+      business.geometry.location.lng,
+      userLocation.lat,
+      userLocation.lng
+    );
+  }, []);
 
-export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
+  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+    const earthRadius = 6371; // in kilometers
+
+    const degToRad = (deg) => {
+      return deg * (Math.PI / 180);
+    };
+
+    const dLat = degToRad(lat2 - lat1);
+    const dLon = degToRad(lon2 - lon1);
+
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(degToRad(lat1)) *
+        Math.cos(degToRad(lat2)) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    const distance = earthRadius * c;
+
+    setDistance(distance.toFixed(1));
+    return distance.toFixed(2); // Return the distance with 2 decimal places
+  };
+
+  const onDirectionClick = () => {
+    window.open(
+      "https://www.google.com/maps/dir/?api=1&origin=" +
+        userLocation.lat +
+        "," +
+        userLocation.lng +
+        "&destination=" +
+        business.geometry.location.lat +
+        "," +
+        business.geometry.location.lng +
+        "&travelmode=driving"
+    );
+  };
+
   return (
     <>
       <div className="p-3 rounded-lg shadow-md hover:shadow-lg my-5 w-full">
@@ -9,16 +63,21 @@ export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
           <Image
             fill
             className="rounded-lg object-cover object-center"
-            src={image}
-            alt="banner-2"
+            src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photo_ref}&key=${GOOGLE_API_KEY}`}
+            alt={business.name}
           />
         </div>
         <div>
           <div className="flex items-center pt-3">
-            <p className="grow text-LightGreyText text-base	">{category}</p>
+            <p className="grow text-LightGreyText text-base	">
+              {business.rating}
+            </p>
+            {/* Ratting */}
+
             <div className="flex items-center justify-between space-x-[2px] ">
-              {ratings.map((values) => {
-                return (
+              <span className="mr-2 text-sm">{business.rating}</span>
+              {[1, 2, 3, 4, 5].map((values) => {
+                return values < Math.ceil(business.rating) ? (
                   <svg
                     key={values}
                     width="14"
@@ -32,28 +91,31 @@ export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
                       fill="#FFA135"
                     />
                   </svg>
+                ) : (
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.77263 0.829716L10.5772 4.48629C10.7027 4.7406 10.9453 4.91682 11.226 4.95754L15.2614 5.54394C15.9683 5.64674 16.2503 6.51516 15.739 7.01345L12.819 9.85967C12.6161 10.0576 12.5233 10.3429 12.5714 10.6223L13.2606 14.6413C13.3814 15.3452 12.6425 15.8819 12.0103 15.5498L8.40117 13.6524C8.15019 13.5206 7.85014 13.5206 7.59916 13.6524L3.98999 15.5498C3.35786 15.8822 2.61894 15.3452 2.73976 14.6413L3.42895 10.6223C3.47701 10.3429 3.38423 10.0576 3.18131 9.85967L0.261325 7.01345C-0.24998 6.51482 0.0320388 5.6464 0.738922 5.54394L4.7743 4.95754C5.05498 4.91682 5.29762 4.7406 5.42311 4.48629L7.2277 0.829716C7.54343 0.189248 8.45657 0.189248 8.77263 0.829716Z"
+                      fill="#F9D4AB"
+                    />
+                  </svg>
                 );
               })}
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.77263 0.829716L10.5772 4.48629C10.7027 4.7406 10.9453 4.91682 11.226 4.95754L15.2614 5.54394C15.9683 5.64674 16.2503 6.51516 15.739 7.01345L12.819 9.85967C12.6161 10.0576 12.5233 10.3429 12.5714 10.6223L13.2606 14.6413C13.3814 15.3452 12.6425 15.8819 12.0103 15.5498L8.40117 13.6524C8.15019 13.5206 7.85014 13.5206 7.59916 13.6524L3.98999 15.5498C3.35786 15.8822 2.61894 15.3452 2.73976 14.6413L3.42895 10.6223C3.47701 10.3429 3.38423 10.0576 3.18131 9.85967L0.261325 7.01345C-0.24998 6.51482 0.0320388 5.6464 0.738922 5.54394L4.7743 4.95754C5.05498 4.91682 5.29762 4.7406 5.42311 4.48629L7.2277 0.829716C7.54343 0.189248 8.45657 0.189248 8.77263 0.829716Z"
-                  fill="#F9D4AB"
-                />
-              </svg>
             </div>
           </div>
 
           <div className="pb-2">
-            <h5 className="text-black font-semibold leading-8 text-xl	">
-              {title}
+            <h5 className="text-black font-semibold leading-8 text-lg">
+              {business.name}
             </h5>
-            <p className="text-base text-rustyRed font-bold">$98</p>
+            <p className="text-sm text-LightGreyText font-light">
+              {business.formatted_address}
+            </p>
           </div>
           <div className=" border-t border-dashed	border-LightGreyText"></div>
 
@@ -82,7 +144,7 @@ export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
               </defs>
             </svg>
             <p className="pl-2  text-LightGreyText text-[13px]	">22hr 30min</p>
-            <svg
+            {/* <svg
               className="ml-2"
               width="20"
               height="20"
@@ -114,11 +176,14 @@ export const SchoolCard = ({ category, title, ratings = [1, 2, 3], image }) => {
                 fill="black"
               />
             </svg>
-            <p className="pl-2 text-LightGreyText text-[13px]	">250 Sales</p>
+            <p className="pl-2 text-LightGreyText text-[13px]	">250 Sales</p> */}
           </div>
           <div className="flex items-center justify-center relative mt-7">
-            <button className="pt-2 pb-2 pl-10 pr-10 bg-rustyRed text-white rounded-full absolute -bottom-8">
-              Profile
+            <button
+              onClick={() => onDirectionClick()}
+              className="pt-2 pb-2 pl-10 pr-10 bg-rustyRed text-white rounded-full absolute -bottom-8"
+            >
+              Get Direction
             </button>
           </div>
         </div>

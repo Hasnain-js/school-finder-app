@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function RangeSelect({onRadiusChange}) {
     const [radius,setRadius]=useState(2500);
   return (
-    <div className='mt-5 px-2'>
+    <div className='mt-5 w-full px-2'>
         <h2
         className='font-bold '
         >Select Radius (In Meter)</h2>

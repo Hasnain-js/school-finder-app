@@ -47,7 +47,7 @@ export default function Home() {
 				<FeatureSection />
 				{/* lower banner section end */}
 				{/* Our schools */}
-				<SchoolCardSection />
+				{/* <SchoolCardSection /> */}
 				{/* End Our schools */}
 				{/* Learning Experience section */}
 				<LearningExperienceSection />

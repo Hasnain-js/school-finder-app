@@ -34,10 +34,10 @@ const Navbar = () => {
 			page: "Contact",
 			link: "/contact",
 		},
-		{
-			page: "Profile",
-			link: "/profile",
-		},
+		// {
+		// 	page: "Profile",
+		// 	link: "/profile",
+		// },
 	];
 	return (
 		<>
@@ -95,7 +95,7 @@ const Navbar = () => {
 										</DropDown>
 									) : (
 										<Link
-											href={'/signin'}
+											href={'/login'}
 											className='cursor-pointer text-base font-semibold border border-black px-7 py-2 rounded-full text-black transition-all duration-200 hover:text-opacity-80'>
 											Login
 										</Link>
