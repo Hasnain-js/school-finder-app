@@ -70,7 +70,7 @@ export default function Home() {
             Find schools here
           </h1>
           {/* Search functionality */}
-          <div className="relative max-w-2xl flex items-center lg:text-lg text-xs justify-between shadow-2xl shadow-silverGrey w-full p-2 text-black rounded-2xl bg-white">
+          {/* <div className="relative max-w-2xl flex items-center lg:text-lg text-xs justify-between shadow-2xl shadow-silverGrey w-full p-2 text-black rounded-2xl bg-white">
             <div className="flex w-full items-center gap-3">
               <span className="w-fit h-fit">
                 <svg
@@ -100,7 +100,7 @@ export default function Home() {
             >
               Search
             </button>
-          </div>
+          </div> */}
         </div>
       </HeroicSection>
       <section className='bg-roseWhite'>
