@@ -61,7 +61,6 @@ export default function Home() {
       }
     })
 
-    console.log(result)
   }
   return (
     <>
